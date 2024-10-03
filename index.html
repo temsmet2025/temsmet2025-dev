@@ -1,98 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEMSMET 2025 Conference</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEMSMET 2025 Conference</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
           },
         },
-      };
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js"></script>
-  </head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js"></script>
+</head>
 
-  <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="bg-slate-950 shadow-lg sticky top-0 z-50 p-2">
-      <div class="container mx-auto py-4 flex justify-between items-center">
-        <!-- Logo (optional) -->
-        <div class="text-white font-bold">TEMSMET 2025</div>
-    
-        <!-- Hamburger Menu for Mobile View -->
-        <div class="block md:hidden">
-          <button
-            id="mobile-menu-button"
-            class="text-white focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <i class="fas fa-bars fa-lg"></i>
-          </button>
-        </div>
-        <!-- Main Menu (hidden on mobile by default) -->
-        <div id="menu" class="hidden md:flex space-x-6 items-center">
-          <a class="text-white hover:text-slate-400 cursor-pointer" href="#home">Home</a>
-    
-          <!-- About Dropdown Menu -->
-          <div class="relative">
-            <a
-              id="about-link"
-              class="text-white hover:text-slate-400 cursor-pointer flex items-center"
-              href="#"
-            >About <i class="fas fa-chevron-down ml-2"></i></a>
-            <!-- Submenu -->
-            <div
-              id="about-submenu"
-              class="absolute left-0 text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]"
-            >
-              <a
-                href="#conference-theme"
-                class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap"
-              >Conference Theme</a>
-              <a
-                href="#objectives"
-                class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap"
-              >Objectives</a>
-              <a
-                href="#target-audience"
-                class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap"
-              >Target Audience</a>
-              <a
-                href="#special-tracks"
-                class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap"
-              >Special Tracks</a>
-              <a
-                href="#conference-structure"
-                class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap"
-              >Conference Structure</a>
-            </div>
-          </div>
-          <a class="text-white hover:text-slate-400 cursor-pointer" href="#speakers">Potential Speakers</a>
-          <a class="text-white hover:text-slate-400 cursor-pointer" href="#venue-and-dates">Venue and Dates</a>
-          <a class="text-white hover:text-slate-400 cursor-pointer" href="#sponsorship-and-exhibitors">Sponsorship and Exhibitors</a>
-          <a class="text-white hover:text-slate-400 cursor-pointer" href="#call-for-papers">Call for Papers</a>
-          <a class="text-white hover:text-slate-400 cursor-pointer" href="#registration">Registration</a>
-          <a class="text-white hover:text-slate-400 cursor-pointer" href="#organizing-committee">Organizing Committee</a>
-        </div>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-slate-950 shadow-lg sticky top-0 z-50 p-2">
+    <div class="container mx-auto py-4 flex justify-between items-center">
+      <!-- Logo (optional) -->
+      <div class="text-white font-bold">TEMSMET 2025</div>
+
+      <!-- Hamburger Menu for Mobile View -->
+      <div class="block md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Toggle menu">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
       </div>
-    
+      <!-- Main Menu (hidden on mobile by default) -->
+      <div id="menu" class="hidden md:flex space-x-6 items-center">
+        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#home">Home</a>
+
+        <!-- About Dropdown Menu -->
+        <div class="relative">
+          <a id="about-link" class="text-white hover:text-slate-400 cursor-pointer flex items-center text-sm"
+            href="#">About <i class="fas fa-chevron-down ml-2"></i></a>
+          <!-- Submenu -->
+          <div id="about-submenu" class="absolute left-0 text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]">
+            <a href="#conference-theme" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+              Theme</a>
+            <a href="#objectives" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Objectives</a>
+            <a href="#target-audience" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Target Audience</a>
+            <a href="#special-tracks" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Special Tracks</a>
+            <a href="#conference-structure" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+              Structure</a>
+          </div>
+        </div>
+        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#speakers">Potential Speakers</a>
+        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#venue-and-dates">Venue and Dates</a>
+        <!-- <a class="text-white hover:text-slate-400 cursor-pointer" href="#sponsorship-and-exhibitors">Sponsorship and
+          Exhibitors</a> -->
+        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#submission-guidelines">Submission
+          Guidelines</a>
+        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#call-for-papers">Call for Papers</a>
+        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#registration">Registration</a>
+        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#organizing-committee">Organizing
+          Committee</a>
+
+        <div class="relative">
+          <a id="past-editions-link" class="text-white hover:text-slate-400 cursor-pointer flex items-center text-sm"
+            href="#">Past
+            Editions
+            <i class="fas fa-chevron-down ml-2"></i>
+          </a>
+          <!-- Submenu -->
+          <div id="past-editions-submenu"
+            class="absolute left-0 text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]">
+            <a href="https://ieeexplore.ieee.org/xpl/conhome/9557352/proceeding"
+              class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2020</a>
+            <a href="https://ieeexplore.ieee.org/xpl/conhome/9768306/proceeding"
+              class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2021</a>
+            <a href="https://ieeexplore.ieee.org/xpl/conhome/10149893/proceeding"
+              class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2023</a>
+          </div>
+        </div>
+
+      </div>
+
       <!-- Mobile Dropdown Menu -->
       <div id="mobile-menu" class="hidden md:hidden bg-slate-950 text-white space-y-4 p-4">
         <a class="block hover:text-slate-400" href="#home">Home</a>
@@ -107,55 +105,52 @@
         <a class="block hover:text-slate-400" href="#call-for-papers">Call for Papers</a>
         <a class="block hover:text-slate-400" href="#organizing-committee">Organizing Committee</a>
       </div>
-    </nav>
+  </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home relative flex justify-center items-center px-2">
-      <div class="absolute inset-0 bg-cover bg-center opacity-90" style="background-image: url('./images/Hero-BG-TEMSMET-2025.jpg');"></div>
-      <!-- Swiper Slider for Background Images -->
-      <div class="absolute inset-0 z-0">
-        <div class="owl-carousel">
-          <!-- Slide 1 -->
-          <div class="item">
-            <img src="images/Hero-BG-TEMSMET-2025.jpg" alt="slider1">
-            <!-- <div
+  <!-- Home Section -->
+  <section id="home" class="home relative flex justify-center items-center px-2">
+    <div class="absolute inset-0 bg-cover bg-center opacity-90"
+      style="background-image: url('./images/Hero-BG-TEMSMET-2025.jpg');"></div>
+    <!-- Swiper Slider for Background Images -->
+    <div class="absolute inset-0 z-0">
+      <div class="owl-carousel">
+        <!-- Slide 1 -->
+        <div class="item">
+          <img src="images/Hero-BG-TEMSMET-2025.jpg" alt="slider1">
+          <!-- <div
               class="bg-cover bg-center h-full w-full"
               style="
                 background-image: url('./images/Hero-BG-TEMSMET-2025.jpg');
               "
             ></div> -->
-          </div>
-          <!-- Slide 2 -->
-          <div class="item">
-            <img src="images/delhi_images_copy.107113609.jpg" alt="slider2">
-          </div>
-          <!-- Slide 3 -->
-          <div class="item">
-            <img src="images/gurgaon-cyber-city-new-delhi-india.webp" alt="slider3">
-          </div>
-          <!-- Slide 4 -->
-          <div class="item">
-            <img src="images/india-gate.jpg" alt="slider4">
-          </div>
-          <!-- Slide 5 -->
-          <div class="item">
-            <img src="images/delhi-red-fort.jpeg" alt="slider5">
-          </div>
-          <!-- Slide 6 -->
-          <!-- <div class="item">
+        </div>
+        <!-- Slide 2 -->
+        <div class="item">
+          <img src="images/delhi_images_copy.107113609.jpg" alt="slider2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="item">
+          <img src="images/gurgaon-cyber-city-new-delhi-india.webp" alt="slider3">
+        </div>
+        <!-- Slide 4 -->
+        <div class="item">
+          <img src="images/india-gate.jpg" alt="slider4">
+        </div>
+        <!-- Slide 5 -->
+        <div class="item">
+          <img src="images/delhi-red-fort.jpeg" alt="slider5">
+        </div>
+        <!-- Slide 6 -->
+        <!-- <div class="item">
             <img src="images/red-fort-famous-fortress-delhi-india.webp" alt="slider6">
           </div> -->
-        </div>
       </div>
+    </div>
 
-      <!-- Text Content -->
-      <div
-        class="relative z-10 text-center p-6 flex justify-center items-center"
-      >
+    <!-- Text Content -->
+    <div class="relative z-10 text-center p-6 flex justify-center items-center">
       <div class="w-[80%]">
-        <h1
-          class="gradient-text text-4xl md:text-6xl font-bold leading-tight mb-4"
-        >
+        <h1 class="gradient-text text-4xl md:text-6xl font-bold leading-tight mb-4">
           Welcome to TEMSMET 2025!
         </h1>
         <p class="text-[32px] text-white suttitle">
@@ -164,354 +159,328 @@
           and Talent (TEMSMET)
         </p>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Conference Theme Section -->
-    <section id="conference-theme" class=" px-2 py-8 bg-white text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Conference Theme</h2>
-        <p class="mb-4">
-          <strong
-            >“Technology Management and Innovation for Sustainable Development
-            in the era of Gen AI”</strong
-          ><br />
-          This theme focuses on the intersection of technology management,
-          innovation, and sustainable development within the context of the
-          rapidly advancing era of Generative Artificial Intelligence (Gen AI).
-          It explores how Gen AI, a subset of AI that can generate new content,
-          designs, solutions, and ideas, is reshaping industries, influencing
-          management strategies, and driving sustainable practices across the
-          globe.
-        </p>
-        <h3 class="text-2xl font-bold mt-6">Key Concepts</h3>
-        <ul class="list-disc pl-6 mb-4">
-          <li>
-            <strong>Generative AI (Gen AI):</strong> Gen AI refers to AI systems
-            that can create new data, designs, or content that mimics human
-            creativity. Examples include AI models that generate text, art,
-            code, and even innovative solutions to complex problems. In the
-            context of sustainable development, Gen AI offers unique
-            opportunities to design more efficient, environmentally friendly
-            technologies and processes.
-          </li>
-          <li>
-            <strong>Technology Management:</strong> Technology management
-            involves the planning, development, and implementation of
-            technological innovations to achieve strategic goals. In the era of
-            Gen AI, technology management must evolve to include the integration
-            of AI-driven solutions, ensuring they align with organizational
-            objectives and contribute to long-term sustainability.
-          </li>
-          <li>
-            <strong>Innovation:</strong> Innovation refers to the process of
-            creating new ideas, products, or methods that deliver value. With
-            Gen AI, innovation is accelerated as AI tools enable rapid
-            prototyping, experimentation, and the development of new solutions
-            that were previously unimaginable. The focus is on leveraging these
-            innovations to address global challenges such as climate change,
-            resource scarcity, and social equity.
-          </li>
-          <li>
-            <strong>Sustainable Development:</strong> Sustainable development
-            involves meeting the needs of the present without compromising the
-            ability of future generations to meet their own needs. It
-            encompasses environmental stewardship, economic growth, and social
-            well-being. The integration of Gen AI into this framework aims to
-            enhance the efficiency, scalability, and impact of sustainable
-            development initiatives.
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Conference Theme Section -->
+  <section id="conference-theme" class=" px-2 py-8 bg-white text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Conference Theme</h2>
+      <p class="mb-4">
+        <strong>“Technology Management and Innovation for Sustainable Development
+          in the era of Gen AI”</strong><br />
+        This theme focuses on the intersection of technology management,
+        innovation, and sustainable development within the context of the
+        rapidly advancing era of Generative Artificial Intelligence (Gen AI).
+        It explores how Gen AI, a subset of AI that can generate new content,
+        designs, solutions, and ideas, is reshaping industries, influencing
+        management strategies, and driving sustainable practices across the
+        globe.
+      </p>
+      <h3 class="text-2xl font-bold mt-6">Key Concepts</h3>
+      <ul class="list-disc pl-6 mb-4">
+        <li>
+          <strong>Generative AI (Gen AI):</strong> Gen AI refers to AI systems
+          that can create new data, designs, or content that mimics human
+          creativity. Examples include AI models that generate text, art,
+          code, and even innovative solutions to complex problems. In the
+          context of sustainable development, Gen AI offers unique
+          opportunities to design more efficient, environmentally friendly
+          technologies and processes.
+        </li>
+        <li>
+          <strong>Technology Management:</strong> Technology management
+          involves the planning, development, and implementation of
+          technological innovations to achieve strategic goals. In the era of
+          Gen AI, technology management must evolve to include the integration
+          of AI-driven solutions, ensuring they align with organizational
+          objectives and contribute to long-term sustainability.
+        </li>
+        <li>
+          <strong>Innovation:</strong> Innovation refers to the process of
+          creating new ideas, products, or methods that deliver value. With
+          Gen AI, innovation is accelerated as AI tools enable rapid
+          prototyping, experimentation, and the development of new solutions
+          that were previously unimaginable. The focus is on leveraging these
+          innovations to address global challenges such as climate change,
+          resource scarcity, and social equity.
+        </li>
+        <li>
+          <strong>Sustainable Development:</strong> Sustainable development
+          involves meeting the needs of the present without compromising the
+          ability of future generations to meet their own needs. It
+          encompasses environmental stewardship, economic growth, and social
+          well-being. The integration of Gen AI into this framework aims to
+          enhance the efficiency, scalability, and impact of sustainable
+          development initiatives.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Objectives Section -->
-    <section id="objectives" class="py-8 bg-gray-100">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Objectives</h2>
-        <ul class="list-disc pl-6">
-          <li>
-            To showcase the latest innovations in AI and their applications in
-            engineering and technology management.
-          </li>
-          <li>
-            To discuss the challenges and opportunities of integrating AI into
-            traditional engineering and management practices.
-          </li>
-          <li>
-            To explore strategic management practices that leverage AI to
-            enhance productivity and innovation.
-          </li>
-          <li>
-            To facilitate networking and collaboration among professionals,
-            academics, and industry leaders in technology, engineering, and
-            management.
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Objectives Section -->
+  <section id="objectives" class="py-8 bg-gray-100">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Objectives</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          To showcase the latest innovations in AI and their applications in
+          engineering and technology management.
+        </li>
+        <li>
+          To discuss the challenges and opportunities of integrating AI into
+          traditional engineering and management practices.
+        </li>
+        <li>
+          To explore strategic management practices that leverage AI to
+          enhance productivity and innovation.
+        </li>
+        <li>
+          To facilitate networking and collaboration among professionals,
+          academics, and industry leaders in technology, engineering, and
+          management.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Objectives Section -->
-    <section id="target-audience" class=" px-2 py-8 bg-white text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Target Audience</h2>
-        <ul class="list-disc pl-6">
-          <li>
-            <strong>Engineers and Technology Professionals:</strong> Individuals
-            working in fields where engineering and technology converge with AI
-            and management.
-          </li>
-          <li>
-            <strong>Researchers and Academics:</strong> Scholars focusing on AI,
-            technology innovation, engineering processes, and management
-            strategies.
-          </li>
-          <li>
-            <strong>Industry Leaders and Managers:</strong> Professionals
-            leading AI-driven initiatives in various sectors, interested in the
-            management of engineering and technology projects.
-          </li>
-          <li>
-            <strong>Government and Policy Makers:</strong> Individuals involved
-            in shaping the policies and regulations around AI, engineering, and
-            technology management.
-          </li>
-          <li>
-            <strong>Students:</strong> Graduate and postgraduate students
-            specializing in AI, engineering, technology, and management.
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Objectives Section -->
+  <section id="target-audience" class=" px-2 py-8 bg-white text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Target Audience</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Engineers and Technology Professionals:</strong> Individuals
+          working in fields where engineering and technology converge with AI
+          and management.
+        </li>
+        <li>
+          <strong>Researchers and Academics:</strong> Scholars focusing on AI,
+          technology innovation, engineering processes, and management
+          strategies.
+        </li>
+        <li>
+          <strong>Industry Leaders and Managers:</strong> Professionals
+          leading AI-driven initiatives in various sectors, interested in the
+          management of engineering and technology projects.
+        </li>
+        <li>
+          <strong>Government and Policy Makers:</strong> Individuals involved
+          in shaping the policies and regulations around AI, engineering, and
+          technology management.
+        </li>
+        <li>
+          <strong>Students:</strong> Graduate and postgraduate students
+          specializing in AI, engineering, technology, and management.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Special Tracks Section -->
-    <section id="special-tracks" class=" px-2 py-8 bg-white text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Special Tracks</h2>
-        <ul class="list-disc pl-6">
-          <li>
-            <strong>AI in Engineering and Technology:</strong> Case Studies and
-            Applications.
-          </li>
-          <li>
-            <strong>Managing AI-Driven Engineering Projects:</strong> Challenges
-            and Solutions.
-          </li>
-          <li>The Role of AI in Sustainable Engineering and Development.</li>
-          <li>
-            Integrating AI into Engineering Design and Manufacturing Processes.
-          </li>
-          <li>
-            Ethical AI and Its Impact on Engineering and Technology Management.
-          </li>
-          <li>Data-Driven Decision Making in Technology Management.</li>
-          <li>AI-Enhanced Project Management in Engineering.</li>
-          <li>
-            The Future of Work: AI’s Impact on Engineering and Management Roles.
-          </li>
-          <li>Innovations in Smart Manufacturing and Industry 4.0.</li>
-          <li>
-            Strategic Planning and Management for AI Implementation in
-            Engineering.
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Special Tracks Section -->
+  <section id="special-tracks" class=" px-2 py-8 bg-white text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Special Tracks</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>AI in Engineering and Technology:</strong> Case Studies and
+          Applications.
+        </li>
+        <li>
+          <strong>Managing AI-Driven Engineering Projects:</strong> Challenges
+          and Solutions.
+        </li>
+        <li>The Role of AI in Sustainable Engineering and Development.</li>
+        <li>
+          Integrating AI into Engineering Design and Manufacturing Processes.
+        </li>
+        <li>
+          Ethical AI and Its Impact on Engineering and Technology Management.
+        </li>
+        <li>Data-Driven Decision Making in Technology Management.</li>
+        <li>AI-Enhanced Project Management in Engineering.</li>
+        <li>
+          The Future of Work: AI’s Impact on Engineering and Management Roles.
+        </li>
+        <li>Innovations in Smart Manufacturing and Industry 4.0.</li>
+        <li>
+          Strategic Planning and Management for AI Implementation in
+          Engineering.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Conference Structure Section -->
-    <section id="conference-structure" class=" px-2 py-8 bg-white text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Conference Structure</h2>
-        <ul class="list-disc pl-6">
-          <li>
-            <strong>Keynote Speeches:</strong> Delivered by renowned experts in
-            AI, engineering, and technology management.
-          </li>
-          <li>
-            <strong>Panel Discussions:</strong> Covering topics such as AI
-            Ethics, the future of engineering education, and the role of
-            technology in sustainable development.
-          </li>
-          <li>
-            <strong>Technical Sessions:</strong> Focused on cutting-edge
-            research and practical case studies in AI and engineering.
-          </li>
-          <li>
-            <strong>Workshops:</strong> Hands-on sessions for participants to
-            engage with AI tools, techniques, and methodologies in engineering
-            and management.
-          </li>
-          <li>
-            <strong>Poster Sessions:</strong> Opportunities for researchers and
-            students to present their work in AI and related fields.
-          </li>
-          <li>
-            <strong>Networking Events:</strong> Facilitated discussions and
-            social events to foster collaboration between attendees from
-            different sectors.
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Conference Structure Section -->
+  <section id="conference-structure" class=" px-2 py-8 bg-white text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Conference Structure</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Keynote Speeches:</strong> Delivered by renowned experts in
+          AI, engineering, and technology management.
+        </li>
+        <li>
+          <strong>Panel Discussions:</strong> Covering topics such as AI
+          Ethics, the future of engineering education, and the role of
+          technology in sustainable development.
+        </li>
+        <li>
+          <strong>Technical Sessions:</strong> Focused on cutting-edge
+          research and practical case studies in AI and engineering.
+        </li>
+        <li>
+          <strong>Workshops:</strong> Hands-on sessions for participants to
+          engage with AI tools, techniques, and methodologies in engineering
+          and management.
+        </li>
+        <li>
+          <strong>Poster Sessions:</strong> Opportunities for researchers and
+          students to present their work in AI and related fields.
+        </li>
+        <li>
+          <strong>Networking Events:</strong> Facilitated discussions and
+          social events to foster collaboration between attendees from
+          different sectors.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Speakers Section -->
-    <section id="speakers" class="py-8 bg-gray-100 text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Potential Speakers</h2>
-        <ul class="list-disc pl-6">
-          <li>
-            <strong>Industry Leaders:</strong> CEOs, CTOs, and Innovation
-            Officers from leading tech companies
-          </li>
-          <li>
-            <strong>Academics and Researchers:</strong> Professors and scholars
-            from top universities specializing in AI, engineering, and
-            management.
-          </li>
-          <li>
-            <strong>Government Representatives:</strong> Policy makers involved
-            in AI regulation and technology policy.
-          </li>
-          <li>
-            <strong>Entrepreneurs</strong>: Founders of startups that are
-            pioneering new applications of AI in engineering and management.
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Speakers Section -->
+  <section id="speakers" class="py-8 bg-gray-100 text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Potential Speakers</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Industry Leaders:</strong> CEOs, CTOs, and Innovation
+          Officers from leading tech companies
+        </li>
+        <li>
+          <strong>Academics and Researchers:</strong> Professors and scholars
+          from top universities specializing in AI, engineering, and
+          management.
+        </li>
+        <li>
+          <strong>Government Representatives:</strong> Policy makers involved
+          in AI regulation and technology policy.
+        </li>
+        <li>
+          <strong>Entrepreneurs</strong>: Founders of startups that are
+          pioneering new applications of AI in engineering and management.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Call for Papers Section -->
-    <section id="venue-and-dates" class=" px-2 py-8 bg-white text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Venue</h2>
-        <p class="text-xl mb-2 text-indigo-700 font-bold">
-          National Institute of Technology, Delhi
-        </p>
-        <p class="mb-4 text-xl"><strong>City:</strong> New Delhi, India</p>
-        <iframe
-          class="map-location"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17424.126437601928!2d77.1329659!3d28.8165378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b1923ada2e3%3A0x1169930518add2fe!2sNational%20Institute%20of%20Technology%20Delhi!5e1!3m2!1sen!2sin!4v1725867350072!5m2!1sen!2sin"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <div class="relative overflow-x-auto mb-2 mt-6">
-            <h2 class="text-3xl font-bold mb-6">Important Dates</h2>
-            <table
-              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
-            >
-              <thead
-                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-              >
-                <tr>
-                  <th scope="col" class="px-6 py-5 bg-gray-200 dark:bg-gray-600">
-                    Events
-                  </th>
-                  <th scope="col" class="px-6 py-5 bg-gray-200 dark:bg-gray-600">
-                    Date
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-200 dark:border-gray-700">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500"
-                  >
-                    Regular Paper Submission Closes
-                  </th>
-                  <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
-                    Aug, 01 2025
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-200 dark:border-gray-700">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500"
-                  >
-                    Notification of Acceptance
-                  </th>
-                  <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
-                    Sep, 05 2025
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-200 dark:border-gray-700">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500"
-                  >
-                    Final Camera-ready Paper
-                  </th>
-                  <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
-                    Sep, 10 2025
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-200 dark:border-gray-700">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500"
-                  >
-                    Early Submission Paper Registration Closes
-                  </th>
-                  <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
-                    Sep, 20 2025
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-200 dark:border-gray-700">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500"
-                  >
-                    Regular Paper Registration Closes
-                  </th>
-                  <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
-                    Sep, 30 2025
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-200 dark:border-gray-700">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500"
-                  >
-                    Conference Date
-                  </th>
-                  <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
-                    Nov, 06-07 2025
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+  <!-- Call for Papers Section -->
+  <section id="venue-and-dates" class=" px-2 py-8 bg-white text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Venue</h2>
+      <p class="text-xl mb-2 text-indigo-700 font-bold">
+        National Institute of Technology, Delhi
+      </p>
+      <p class="mb-4 text-xl"><strong>City:</strong> New Delhi, India</p>
+      <iframe class="map-location"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17424.126437601928!2d77.1329659!3d28.8165378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b1923ada2e3%3A0x1169930518add2fe!2sNational%20Institute%20of%20Technology%20Delhi!5e1!3m2!1sen!2sin!4v1725867350072!5m2!1sen!2sin"
+        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="relative overflow-x-auto mb-2 mt-6">
+        <h2 class="text-3xl font-bold mb-6">Important Dates</h2>
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" class="px-6 py-5 bg-gray-200 dark:bg-gray-600">
+                Events
+              </th>
+              <th scope="col" class="px-6 py-5 bg-gray-200 dark:bg-gray-600">
+                Date
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500">
+                Regular Paper Submission Closes
+              </th>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
+                Aug, 01 2025
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500">
+                Notification of Acceptance
+              </th>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
+                Sep, 05 2025
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500">
+                Final Camera-ready Paper
+              </th>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
+                Sep, 10 2025
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500">
+                Early Submission Paper Registration Closes
+              </th>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
+                Sep, 20 2025
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500">
+                Regular Paper Registration Closes
+              </th>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
+                Sep, 30 2025
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-500">
+                Conference Date
+              </th>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-500">
+                Nov, 06-07 2025
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Call for Papers Section -->
-    <section
-      id="sponsorship-and-exhibitors"
-      class=" px-2 py-8 bg-white text-gray-800"
-    >
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Sponsorship and Exhibitors</h2>
-        <ul class="list-disc pl-6">
-          <li>
-            <strong>Technology Companies:</strong> AI, software, and engineering
-            firms.
-          </li>
-          <li>
-            <strong>Universities and Research Institutions:</strong> Leading
-            educational bodies with programs in AI, engineering, and management.
-          </li>
-          <li>
-            <strong>Government Agencies:</strong> Bodies interested in the
-            development and regulation of AI and technology.
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Call for Papers Section -->
+  <section id="sponsorship-and-exhibitors" class=" px-2 py-8 bg-white text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Sponsorship and Exhibitors</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Technology Companies:</strong> AI, software, and engineering
+          firms.
+        </li>
+        <li>
+          <strong>Universities and Research Institutions:</strong> Leading
+          educational bodies with programs in AI, engineering, and management.
+        </li>
+        <li>
+          <strong>Government Agencies:</strong> Bodies interested in the
+          development and regulation of AI and technology.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Call for Papers Section -->
-    <!-- <section id="call-for-papers" class=" px-2 py-8 bg-white text-gray-800">
+  <!-- Call for Papers Section -->
+  <!-- <section id="call-for-papers" class=" px-2 py-8 bg-white text-gray-800">
       <div class="container mx-auto max-w-6xl">
         <h2 class="text-3xl font-bold mb-6">Call for Papers</h2>
         <p class="mb-4">
@@ -523,239 +492,311 @@
         <p>July 06, 2025</p>
       </div>
     </section> -->
-    <section id="tracks" class="px-4 py-8 bg-white text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Call for Papers</h2>
-  
-          <!-- Track 1 -->
-          <div class="mb-8">
-              <h3 class="text-3l font-semibold mb-4">Track 1 - Power Converters Topologies for Renewable Energy Systems and Electric Vehicles: Design and Control</h3>
-              <ul class="list-disc pl-8 space-y-2">
-                  <li>Power Converter Topologies: Design, Modelling, Control etc.</li>
-                  <li>Power Electronics Systems for Renewable and Alternate Energy</li>
-                  <li>Power Electronics Topologies for Green Hydrogen</li>
-                  <li>Solid State Transformers/Wireless Power Transfer</li>
-                  <li>Grid forming Technologies (Grid forming/Grid tied converters etc.)</li>
-                  <li>Modular Multilevel Converters</li>
-              </ul>
-          </div>
-  
-          <!-- Track 2 -->
-          <div class="mb-8">
-              <h3 class="text-3l font-semibold mb-4">Track 2 - Data Analysis, Artificial Intelligence and Communication for Power Electronics Systems</h3>
-              <ul class="list-disc pl-8 space-y-2">
-                  <li>Data Analysis Applied to Power Electronics and Drive Systems</li>
-                  <li>Application of Artificial Intelligence to Power Electronics and Drive Systems</li>
-                  <li>Security Aspects of Cyber Physical Energy Systems</li>
-                  <li>Wireless Control of Power Electronics Systems</li>
-                  <li>Digital Twin of Power Electronic Converters and Systems</li>
-                  <li>Big Data and Artificial Intelligence in Energy Conversion</li>
-              </ul>
-          </div>
-  
-          <!-- Track 3 -->
-          <div class="mb-8">
-              <h3 class="text-3l font-semibold mb-4">Track 3 - Artificial Intelligence, Machine Learning, and Data Science</h3>
-              <ul class="list-disc pl-8 space-y-2">
-                  <li>Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks</li>
-                  <li>Generative Adversarial Networks (GANs)</li>
-                  <li>Language Models and Transformers</li>
-                  <li>Sentiment Analysis and Text Mining</li>
-                  <li>Machine Translation and Speech Recognition</li>
-                  <li>Object Detection and Recognition</li>
-                  <li>Image Segmentation and Classification</li>
-                  <li>Augmented Reality (AR) and Virtual Reality (VR) Applications</li>
-                  <li>Multi-Agent Systems</li>
-                  <li>Applications in Robotics and Autonomous Systems</li>
-                  <li>Predictive Analytics and Forecasting</li>
-                  <li>Data Visualization Techniques</li>
-                  <li>Social Network Analysis</li>
-                  <li>AI Ethics and applications</li>
-                  <li>Machine Learning and applications</li>
-                  <li>Financial Modeling and Fraud Detection</li>
-                  <li>Smart Manufacturing and Industry 4.0</li>
-              </ul>
-          </div>
-  
-          <!-- Track 4 -->
-          <div class="mb-8">
-              <h3 class="text-3l font-semibold mb-4">Track 4 - Systems, Networking, and Cybersecurity</h3>
-              <ul class="list-disc pl-8 space-y-2">
-                  <li>Network Protocols and Architectures</li>
-                  <li>Cloud Computing and Virtualization Technologies</li>
-                  <li>Edge Computing and Fog Computing</li>
-                  <li>IoT Architectures and Protocols</li>
-                  <li>Sensor Networks and Data Acquisition</li>
-                  <li>Smart Cities and Smart Homes</li>
-                  <li>Cryptography and Encryption Techniques</li>
-                  <li>Intrusion Detection and Prevention Systems</li>
-                  <li>Cyber Threat Intelligence and Analytics</li>
-                  <li>Blockchain and Decentralized Systems</li>
-                  <li>Blockchain Security and Privacy</li>
-                  <li>High-Performance Computing (HPC)</li>
-                  <li>Parallel Algorithms and Distributed Computing</li>
-                  <li>GPU Computing and Accelerators</li>
-                  <li>HPC Applications in Scientific Research</li>
-                  <li>Software-Defined Networking (SDN) and Network Function Virtualization (NFV)</li>
-                  <li>Programmable Networks</li>
-                  <li>Network Automation and Orchestration</li>
-                  <li>Performance Optimization in SDN/NFV</li>
-                  <li>Data Privacy and Protection</li>
-                  <li>Embedded Systems and Real-Time Computing</li>
-              </ul>
-          </div>
+  <section id="tracks" class="px-4 py-8 bg-white text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Call for Papers</h2>
+
+      <!-- Track 1 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 1 - Power Converters Topologies for Renewable Energy Systems and
+          Electric Vehicles: Design and Control</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Power Converter Topologies: Design, Modelling, Control etc.</li>
+          <li>Power Electronics Systems for Renewable and Alternate Energy</li>
+          <li>Power Electronics Topologies for Green Hydrogen</li>
+          <li>Solid State Transformers/Wireless Power Transfer</li>
+          <li>Grid forming Technologies (Grid forming/Grid tied converters etc.)</li>
+          <li>Modular Multilevel Converters</li>
+        </ul>
       </div>
-  </section>
+
+      <!-- Track 2 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 2 - Data Analysis, Artificial Intelligence and Communication for
+          Power Electronics Systems</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Data Analysis Applied to Power Electronics and Drive Systems</li>
+          <li>Application of Artificial Intelligence to Power Electronics and Drive Systems</li>
+          <li>Security Aspects of Cyber Physical Energy Systems</li>
+          <li>Wireless Control of Power Electronics Systems</li>
+          <li>Digital Twin of Power Electronic Converters and Systems</li>
+          <li>Big Data and Artificial Intelligence in Energy Conversion</li>
+        </ul>
+      </div>
+
+      <!-- Track 3 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 3 - Artificial Intelligence, Machine Learning, and Data Science
+        </h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks</li>
+          <li>Generative Adversarial Networks (GANs)</li>
+          <li>Language Models and Transformers</li>
+          <li>Sentiment Analysis and Text Mining</li>
+          <li>Machine Translation and Speech Recognition</li>
+          <li>Object Detection and Recognition</li>
+          <li>Image Segmentation and Classification</li>
+          <li>Augmented Reality (AR) and Virtual Reality (VR) Applications</li>
+          <li>Multi-Agent Systems</li>
+          <li>Applications in Robotics and Autonomous Systems</li>
+          <li>Predictive Analytics and Forecasting</li>
+          <li>Data Visualization Techniques</li>
+          <li>Social Network Analysis</li>
+          <li>AI Ethics and applications</li>
+          <li>Machine Learning and applications</li>
+          <li>Financial Modeling and Fraud Detection</li>
+          <li>Smart Manufacturing and Industry 4.0</li>
+        </ul>
+      </div>
+
+      <!-- Track 4 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 4 - Systems, Networking, and Cybersecurity</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Network Protocols and Architectures</li>
+          <li>Cloud Computing and Virtualization Technologies</li>
+          <li>Edge Computing and Fog Computing</li>
+          <li>IoT Architectures and Protocols</li>
+          <li>Sensor Networks and Data Acquisition</li>
+          <li>Smart Cities and Smart Homes</li>
+          <li>Cryptography and Encryption Techniques</li>
+          <li>Intrusion Detection and Prevention Systems</li>
+          <li>Cyber Threat Intelligence and Analytics</li>
+          <li>Blockchain and Decentralized Systems</li>
+          <li>Blockchain Security and Privacy</li>
+          <li>High-Performance Computing (HPC)</li>
+          <li>Parallel Algorithms and Distributed Computing</li>
+          <li>GPU Computing and Accelerators</li>
+          <li>HPC Applications in Scientific Research</li>
+          <li>Software-Defined Networking (SDN) and Network Function Virtualization (NFV)</li>
+          <li>Programmable Networks</li>
+          <li>Network Automation and Orchestration</li>
+          <li>Performance Optimization in SDN/NFV</li>
+          <li>Data Privacy and Protection</li>
+          <li>Embedded Systems and Real-Time Computing</li>
+        </ul>
+      </div>
+
+      <!-- </section>
   <section id="business-management-tracks" class="px-4 py-8 bg-white text-gray-800">
     <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Business Management Track</h2>
+        <h2 class="text-3xl font-bold mb-6">Business Management Track</h2> -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 5 - Digital Transformation and Industry 5.0</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Smart manufacturing and automation</li>
+          <li>Predictive maintenance and AI-driven production systems</li>
+          <li>Digital twins and simulation in business models</li>
+          <li>Real-time data analytics for decision-making</li>
+          <li>Organizational change management in digital transformations</li>
+          <li>AI-driven customer relationship management (CRM) and personalization</li>
+          <li>Machine learning for predictive business analytics</li>
+          <li>Ethical AI: Addressing bias and transparency</li>
+          <li>AI-powered financial forecasting and risk management</li>
+          <li>Automation of decision-making processes in management</li>
+        </ul>
+      </div>
 
-        <!-- Track 1 -->
-        <div class="mb-8">
-            <h3 class="text-3l font-semibold mb-4">Track 1 - Digital Transformation and Industry 5.0</h3>
-            <ul class="list-disc pl-8 space-y-2">
-                <li>Smart manufacturing and automation</li>
-                <li>Predictive maintenance and AI-driven production systems</li>
-                <li>Digital twins and simulation in business models</li>
-                <li>Real-time data analytics for decision-making</li>
-                <li>Organizational change management in digital transformations</li>
-                <li>AI-driven customer relationship management (CRM) and personalization</li>
-                <li>Machine learning for predictive business analytics</li>
-                <li>Ethical AI: Addressing bias and transparency</li>
-                <li>AI-powered financial forecasting and risk management</li>
-                <li>Automation of decision-making processes in management</li>
-            </ul>
-        </div>
+      <!-- Track 2 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 6 - Blockchain in Sustainable Finance and Fintech</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>ESG metrics and sustainable finance</li>
+          <li>Blockchain in supply chain and finance</li>
+          <li>Decentralized finance (DeFi) and blockchain adoption</li>
+          <li>Financial institutions and sustainability</li>
+          <li>Digital currencies, CBDCs (Central Bank Digital Currencies), and cryptocurrency regulation</li>
+          <li>AI and machine learning in risk assessment and fraud detection</li>
+          <li>Peer-to-peer lending, robo-advisors, and the democratization of finance</li>
+          <li>Blockchain in cross-border payments and trade finance</li>
+          <li>Open banking and the rise of API-driven financial services</li>
+        </ul>
+      </div>
 
-        <!-- Track 2 -->
-        <div class="mb-8">
-            <h3 class="text-3l font-semibold mb-4">Track 2 - Blockchain in Sustainable Finance and Fintech</h3>
-            <ul class="list-disc pl-8 space-y-2">
-                <li>ESG metrics and sustainable finance</li>
-                <li>Blockchain in supply chain and finance</li>
-                <li>Decentralized finance (DeFi) and blockchain adoption</li>
-                <li>Financial institutions and sustainability</li>
-                <li>Digital currencies, CBDCs (Central Bank Digital Currencies), and cryptocurrency regulation</li>
-                <li>AI and machine learning in risk assessment and fraud detection</li>
-                <li>Peer-to-peer lending, robo-advisors, and the democratization of finance</li>
-                <li>Blockchain in cross-border payments and trade finance</li>
-                <li>Open banking and the rise of API-driven financial services</li>
-            </ul>
-        </div>
+      <!-- Track 3 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 7 - Business Intelligence and Cloud Computing in Business
+          Innovation</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Data-driven business models and monetization strategies</li>
+          <li>Advanced data visualization and storytelling for executives</li>
+          <li>Real-time business intelligence for competitive advantage</li>
+          <li>Cloud-based analytics platforms for agile business decisions</li>
+          <li>Cybersecurity and data privacy challenges in data-driven organizations</li>
+          <li>Cloud-native architecture and enterprise solutions</li>
+          <li>Hybrid cloud strategies for business agility</li>
+          <li>Cloud security and governance frameworks</li>
+          <li>Edge computing and its business applications</li>
+        </ul>
+      </div>
 
-        <!-- Track 3 -->
-        <div class="mb-8">
-            <h3 class="text-3l font-semibold mb-4">Track 3 - Business Intelligence and Cloud Computing in Business Innovation</h3>
-            <ul class="list-disc pl-8 space-y-2">
-                <li>Data-driven business models and monetization strategies</li>
-                <li>Advanced data visualization and storytelling for executives</li>
-                <li>Real-time business intelligence for competitive advantage</li>
-                <li>Cloud-based analytics platforms for agile business decisions</li>
-                <li>Cybersecurity and data privacy challenges in data-driven organizations</li>
-                <li>Cloud-native architecture and enterprise solutions</li>
-                <li>Hybrid cloud strategies for business agility</li>
-                <li>Cloud security and governance frameworks</li>
-                <li>Edge computing and its business applications</li>
-            </ul>
-        </div>
+      <!-- Track 4 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 8 - Digital Marketing, Disruptive Business Models, and Gig Economy
+        </h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>AI-powered digital marketing and customer segmentation</li>
+          <li>Omni-channel marketing strategies for a seamless customer experience</li>
+          <li>Personalization in e-commerce through machine learning</li>
+          <li>Voice search, chatbots, and conversational commerce</li>
+          <li>Data-driven customer experience management</li>
+          <li>The role of automation and AI in reshaping job roles</li>
+          <li>Gig economy platforms and their role in future employment</li>
+          <li>Managing remote teams and productivity in the digital age</li>
+          <li>Workforce reskilling for automation and AI</li>
+          <li>Legal and policy implications of the gig economy</li>
+          <li>Managing innovation in the age of disruption</li>
+          <li>Open innovation and co-creation with stakeholders</li>
+          <li>Disruptive technologies and their impact on traditional industries</li>
+          <li>Lean startup methodologies for corporate innovation</li>
+        </ul>
+      </div>
 
-        <!-- Track 4 -->
-        <div class="mb-8">
-            <h3 class="text-3l font-semibold mb-4">Track 4 - Digital Marketing, Disruptive Business Models, and Gig Economy</h3>
-            <ul class="list-disc pl-8 space-y-2">
-                <li>AI-powered digital marketing and customer segmentation</li>
-                <li>Omni-channel marketing strategies for a seamless customer experience</li>
-                <li>Personalization in e-commerce through machine learning</li>
-                <li>Voice search, chatbots, and conversational commerce</li>
-                <li>Data-driven customer experience management</li>
-                <li>The role of automation and AI in reshaping job roles</li>
-                <li>Gig economy platforms and their role in future employment</li>
-                <li>Managing remote teams and productivity in the digital age</li>
-                <li>Workforce reskilling for automation and AI</li>
-                <li>Legal and policy implications of the gig economy</li>
-                <li>Managing innovation in the age of disruption</li>
-                <li>Open innovation and co-creation with stakeholders</li>
-                <li>Disruptive technologies and their impact on traditional industries</li>
-                <li>Lean startup methodologies for corporate innovation</li>
-            </ul>
-        </div>
+      <!-- Track 5 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 9 - Signal Processing, Communication, and Networks for Generative
+          AI</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Applied Signal Processing Systems</li>
+          <li>Audio & Acoustic Signal Processing</li>
+          <li>Biomedical Imaging & Signal Processing</li>
+          <li>Compressive Sensing, Sparse Modeling</li>
+          <li>Computational Imaging</li>
+          <li>Computer Vision</li>
+          <li>Deep Learning/Machine Learning for Signal Processing</li>
+          <li>Image, Video & Multidimensional Signal Processing</li>
+          <li>Industrial Signal Processing</li>
+          <li>Information Forensics & Security</li>
+          <li>Internet of Things</li>
+          <li>Multimedia Signal Processing</li>
+          <li>Quantum Signal Processing</li>
+          <li>Remote Sensing & Signal Processing</li>
+          <li>Sensor Array & Multichannel SP</li>
+          <li>Signal Processing for Big Data</li>
+          <li>Signal Processing for Communication</li>
+          <li>Signal Processing for Cyber Security</li>
+          <li>Signal Processing for Education</li>
+          <li>Signal Processing for Robotics</li>
+          <li>Signal Processing Over Graphs</li>
+          <li>Signal Processing Theory & Methods</li>
+          <li>Speech and Language Processing</li>
+          <li>Optical Fibre Communication and Systems</li>
+          <li>Computer and Intelligent Communication</li>
+          <li>Wireless and Broadband Communication and Sensor Networks</li>
+          <li>Network Security</li>
+          <li>RF Antenna Design and Modeling</li>
+          <li>Cognitive Communications</li>
+          <li>Analog/Digital Communication Systems</li>
+          <li>LTE, 5G and 6G Design</li>
+        </ul>
+      </div>
 
-        <!-- Track 5 -->
-        <div class="mb-8">
-            <h3 class="text-3l font-semibold mb-4">Track 5 - Signal Processing, Communication, and Networks for Generative AI</h3>
-            <ul class="list-disc pl-8 space-y-2">
-                <li>Applied Signal Processing Systems</li>
-                <li>Audio & Acoustic Signal Processing</li>
-                <li>Biomedical Imaging & Signal Processing</li>
-                <li>Compressive Sensing, Sparse Modeling</li>
-                <li>Computational Imaging</li>
-                <li>Computer Vision</li>
-                <li>Deep Learning/Machine Learning for Signal Processing</li>
-                <li>Image, Video & Multidimensional Signal Processing</li>
-                <li>Industrial Signal Processing</li>
-                <li>Information Forensics & Security</li>
-                <li>Internet of Things</li>
-                <li>Multimedia Signal Processing</li>
-                <li>Quantum Signal Processing</li>
-                <li>Remote Sensing & Signal Processing</li>
-                <li>Sensor Array & Multichannel SP</li>
-                <li>Signal Processing for Big Data</li>
-                <li>Signal Processing for Communication</li>
-                <li>Signal Processing for Cyber Security</li>
-                <li>Signal Processing for Education</li>
-                <li>Signal Processing for Robotics</li>
-                <li>Signal Processing Over Graphs</li>
-                <li>Signal Processing Theory & Methods</li>
-                <li>Speech and Language Processing</li>
-                <li>Optical Fibre Communication and Systems</li>
-                <li>Computer and Intelligent Communication</li>
-                <li>Wireless and Broadband Communication and Sensor Networks</li>
-                <li>Network Security</li>
-                <li>RF Antenna Design and Modeling</li>
-                <li>Cognitive Communications</li>
-                <li>Analog/Digital Communication Systems</li>
-                <li>LTE, 5G and 6G Design</li>
-            </ul>
-        </div>
+      <!-- Track 6 -->
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 10 - VLSI Technology and Embedded System for Generative AI</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>VLSI Design</li>
+          <li>High Speed/Low Power Circuits</li>
+          <li>Digital Circuits and FPGA Based Designs</li>
+          <li>Analog/Mixed Signal System Design</li>
+          <li>Deep Submicron Design and Modeling Issues</li>
+          <li>Testing and Verification</li>
+          <li>Emerging Semiconductor Technologies</li>
+          <li>Real-Time Embedded Systems and Applications</li>
+          <li>Distributed Embedded Computing</li>
+          <li>Internet-of-Things</li>
+        </ul>
+      </div>
 
-        <!-- Track 6 -->
-        <div class="mb-8">
-            <h3 class="text-3l font-semibold mb-4">Track 6 - VLSI Technology and Embedded System for Generative AI</h3>
-            <ul class="list-disc pl-8 space-y-2">
-                <li>VLSI Design</li>
-                <li>High Speed/Low Power Circuits</li>
-                <li>Digital Circuits and FPGA Based Designs</li>
-                <li>Analog/Mixed Signal System Design</li>
-                <li>Deep Submicron Design and Modeling Issues</li>
-                <li>Testing and Verification</li>
-                <li>Emerging Semiconductor Technologies</li>
-                <li>Real-Time Embedded Systems and Applications</li>
-                <li>Distributed Embedded Computing</li>
-                <li>Internet-of-Things</li>
-            </ul>
-        </div>
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 11 - Next-Gen Communications, Networks, and IoT for Generative AI
+        </h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Physical layer aspects, Connectivity-judicious network</li>
+          <li>Self-healing networks, Adaptive network design</li>
+          <li>Instant deployability</li>
+          <li>Inherent security</li>
+          <li>Reportability</li>
+          <li>Network Optimization</li>
+          <li>Environmentally expansive</li>
+          <li>New medium layer aspects</li>
+          <li>Network layer protocols for wide area applications</li>
+          <li>Heterogeneous Wireless Network Communications</li>
+          <li>Deterministic Propagation Modelling</li>
+          <li>Energy self-aware network</li>
+          <li>Next Generation Communications</li>
+          <li>Coding theory and Digital Signal Processing</li>
+          <li>ML methods in communications</li>
+          <li>Industrial IoT and industrial data processing</li>
+          <li>Sensing and actuation in environmental/industrial/biomedical applications</li>
+          <li>Wearable sensing and wireless sensor networks</li>
+          <li>Embedded AI</li>
+          <li>Post-quantum (code-based) cryptography</li>
+          <li>Information Protection in Computer Systems and Networks</li>
+        </ul>
+      </div>
+      <div class="mb-8">
+        <h3 class="text-3l font-semibold mb-4">Track 12 - Robotics and Cybernetics for Generative AI</h3>
+        <ul class="list-disc pl-8 space-y-2">
+          <li>Robots development and their applications</li>
+          <li>Outdoor service robots (security, rescue, inspection, agriculture, construction, etc.)</li>
+          <li>Aerial robots (Guidance, Navigation and Control)</li>
+          <li>Artificial intelligence, remote sensing</li>
+          <li>Man-machine interfaces applied to single and multi-robot systems</li>
+          <li>Design, construction, and control of mobile robots</li>
+          <li>Operation and programming of modern industrial robots and manipulators</li>
+          <li>Process control in areas such as production, transport, power infrastructure, ecology, healthcare,
+            intelligent
+            buildings, household, mobile applications, etc.</li>
+          <li>Design and programming of industrial control systems and other intelligent devices</li>
+          <li>Programming and implementation of networked control systems based on advanced communication and software
+            technologies</li>
+          <li>Artificial intelligence, telemedicine, and biocybernetics</li>
+          <li>Genomic data analysis</li>
+          <li>Data mining</li>
+          <li>Machine learning</li>
+          <li>Data management</li>
+          <li>Adapted Cybernetics</li>
+          <li>Medical Cybernetics</li>
+          <li>Fisheries and Aquaculture Cybernetics</li>
+          <li>Process Cybernetics</li>
+          <li>Navigation, Vessel Control Systems, and Robotic Technology</li>
+          <li>Case-Based Reasoning</li>
+          <li>Decision Analysis</li>
+          <li>Intelligent Databases & Information Retrieval</li>
+          <li>Dynamic Systems Modeling</li>
+          <li>Decision Support Systems</li>
+          <li>Multi-criteria Decision Making</li>
+          <li>Qualitative and Approximate-Reasoning Modeling</li>
+          <li>Behavioral Decision Making</li>
+          <li>Distributed Decision Making</li>
+          <li>Information and Decision Systems</li>
+          <li>Risk Management</li>
+        </ul>
+      </div>
+
     </div>
-</section>
+  </section>
 
 
-    <!-- Registration Section -->
-    <section id="registration" class="w-[90%] max-w-7xl mx-auto p-6">
-        <h2 class="text-3xl font-bold mb-6">Registration (18% GST exclusive)</h2>
+  <!-- Registration Section -->
+  <section id="registration" class="w-[90%] max-w-7xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-6">Registration (18% GST exclusive)</h2>
 
-        <!-- Author Category Table -->
-        <div class="overflow-x-auto shadow-lg">
-        <table class="min-w-full divide-y divide-gray-300">
-            <thead class="bg-gray-700 text-white">
-            <tr>
-                <th class="px-6 py-3 text-left text-sm font-semibold">Author Category</th>
-                <th class="px-6 py-3 text-left text-sm font-semibold">Early Bird (Indian)</th>
-                <th class="px-6 py-3 text-left text-sm font-semibold">Early Bird (Foreign)</th>
-                <th class="px-6 py-3 text-left text-sm font-semibold">Regular (Indian)</th>
-                <th class="px-6 py-3 text-left text-sm font-semibold">Regular (Foreign)</th>
-            </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-            <!-- <tr class="bg-blue-100">
+    <!-- Author Category Table -->
+    <div class="overflow-x-auto shadow-lg">
+      <table class="min-w-full divide-y divide-gray-300">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-6 py-3 text-left text-sm font-semibold">Author Category</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold">Early Bird (Indian)</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold">Early Bird (Foreign)</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold">Regular (Indian)</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold">Regular (Foreign)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <!-- <tr class="bg-blue-100">
                 <td class="px-6 py-4 text-sm">IEEE TEMS Member</td>
                 <td class="px-6 py-4 text-sm">7,000 INR</td>
                 <td class="px-6 py-4 text-sm">250 USD</td>
@@ -776,274 +817,311 @@
                 <td class="px-6 py-4 text-sm">12,000 INR</td>
                 <td class="px-6 py-4 text-sm">500 USD</td>
             </tr> -->
-            <tr class="bg-blue-100">
-              <td class="px-6 py-4 text-sm">IEEE Member*</td>
-              <td class="px-6 py-4 text-sm">9,000 INR</td>
-              <td class="px-6 py-4 text-sm">350 USD</td>
-              <td class="px-6 py-4 text-sm">11,000 INR</td>
-              <td class="px-6 py-4 text-sm">400 USD</td>
+          <tr class="bg-blue-100">
+            <td class="px-6 py-4 text-sm">IEEE Member*</td>
+            <td class="px-6 py-4 text-sm">9,000 INR</td>
+            <td class="px-6 py-4 text-sm">350 USD</td>
+            <td class="px-6 py-4 text-sm">11,000 INR</td>
+            <td class="px-6 py-4 text-sm">400 USD</td>
           </tr>
           <tr>
-              <td class="px-6 py-4 text-sm">Non IEEE Member</td>
-              <td class="px-6 py-4 text-sm">10,000 INR</td>
-              <td class="px-6 py-4 text-sm">450 USD</td>
-              <td class="px-6 py-4 text-sm">12,000 INR</td>
-              <td class="px-6 py-4 text-sm">500 USD</td>
+            <td class="px-6 py-4 text-sm">Non IEEE Member</td>
+            <td class="px-6 py-4 text-sm">10,000 INR</td>
+            <td class="px-6 py-4 text-sm">450 USD</td>
+            <td class="px-6 py-4 text-sm">12,000 INR</td>
+            <td class="px-6 py-4 text-sm">500 USD</td>
           </tr>
           <tr class="bg-blue-100">
-              <td class="px-6 py-4 text-sm">IEEE TEMS Member</td>
-              <td class="px-6 py-4 text-sm">8,000 INR</td>
-              <td class="px-6 py-4 text-sm">250 USD</td>
-              <td class="px-6 py-4 text-sm">9,000 INR</td>
-              <td class="px-6 py-4 text-sm">350 USD</td>
+            <td class="px-6 py-4 text-sm">IEEE TEMS Member</td>
+            <td class="px-6 py-4 text-sm">8,000 INR</td>
+            <td class="px-6 py-4 text-sm">250 USD</td>
+            <td class="px-6 py-4 text-sm">9,000 INR</td>
+            <td class="px-6 py-4 text-sm">350 USD</td>
           </tr>
           <tr>
-              <td class="px-6 py-4 text-sm">IEEE Student Member</td>
-              <td class="px-6 py-4 text-sm">5,500 INR</td>
-              <td class="px-6 py-4 text-sm">200 USD</td>
-              <td class="px-6 py-4 text-sm">6,500 INR</td>
-              <td class="px-6 py-4 text-sm">250 USD</td>
+            <td class="px-6 py-4 text-sm">IEEE Student Member</td>
+            <td class="px-6 py-4 text-sm">5,500 INR</td>
+            <td class="px-6 py-4 text-sm">200 USD</td>
+            <td class="px-6 py-4 text-sm">6,500 INR</td>
+            <td class="px-6 py-4 text-sm">250 USD</td>
           </tr>
           <tr class="bg-blue-100">
-              <td class="px-6 py-4 text-sm">Non-IEEE Student Member</td>
-              <td class="px-6 py-4 text-sm">6,500 INR</td>
-              <td class="px-6 py-4 text-sm">250 USD</td>
-              <td class="px-6 py-4 text-sm">8,000 INR</td>
-              <td class="px-6 py-4 text-sm">300 USD</td>
+            <td class="px-6 py-4 text-sm">Non-IEEE Student Member</td>
+            <td class="px-6 py-4 text-sm">6,500 INR</td>
+            <td class="px-6 py-4 text-sm">250 USD</td>
+            <td class="px-6 py-4 text-sm">8,000 INR</td>
+            <td class="px-6 py-4 text-sm">300 USD</td>
           </tr>
           <tr>
-              <td class="px-6 py-4 text-sm">IEEE TEMS Student Member</td>
-              <td class="px-6 py-4 text-sm">5,000 INR</td>
-              <td class="px-6 py-4 text-sm">175 USD</td>
-              <td class="px-6 py-4 text-sm">6,000 INR</td>
-              <td class="px-6 py-4 text-sm">225 USD</td>
+            <td class="px-6 py-4 text-sm">IEEE TEMS Student Member</td>
+            <td class="px-6 py-4 text-sm">5,000 INR</td>
+            <td class="px-6 py-4 text-sm">175 USD</td>
+            <td class="px-6 py-4 text-sm">6,000 INR</td>
+            <td class="px-6 py-4 text-sm">225 USD</td>
           </tr>
           <tr class="bg-blue-100">
-              <td class="px-6 py-4 text-sm">Charges per additional accepted paper (for Student author)</td>
-              <td class="px-6 py-4 text-sm">3,500 INR</td>
-              <td class="px-6 py-4 text-sm">100 USD</td>
-              <td class="px-6 py-4 text-sm">3,500 INR</td>
-              <td class="px-6 py-4 text-sm">100 USD</td>
+            <td class="px-6 py-4 text-sm">Charges per additional accepted paper (for Student author)</td>
+            <td class="px-6 py-4 text-sm">3,500 INR</td>
+            <td class="px-6 py-4 text-sm">100 USD</td>
+            <td class="px-6 py-4 text-sm">3,500 INR</td>
+            <td class="px-6 py-4 text-sm">100 USD</td>
           </tr>
           <tr>
-              <td class="px-6 py-4 text-sm">Charges per additional accepted paper (for Regular author)</td>
-              <td class="px-6 py-4 text-sm">4,500 INR</td>
-              <td class="px-6 py-4 text-sm">150 USD</td>
-              <td class="px-6 py-4 text-sm">4,500 INR</td>
-              <td class="px-6 py-4 text-sm">150 USD</td>
+            <td class="px-6 py-4 text-sm">Charges per additional accepted paper (for Regular author)</td>
+            <td class="px-6 py-4 text-sm">4,500 INR</td>
+            <td class="px-6 py-4 text-sm">150 USD</td>
+            <td class="px-6 py-4 text-sm">4,500 INR</td>
+            <td class="px-6 py-4 text-sm">150 USD</td>
           </tr>
         </tbody>
-        </table>
-        </div>
+      </table>
+    </div>
 
-        <!-- Delegates / Participants Table -->
-        <div class="overflow-x-auto shadow-lg mt-8">
-        <table class="min-w-full divide-y divide-gray-300">
-            <thead class="bg-gray-700 text-white">
-            <tr>
-                <th class="px-6 py-3 text-left text-sm font-semibold">Delegates / Participants</th>
-                <th class="px-6 py-3 text-left text-sm font-semibold">Fees</th>
-            </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-            <tr class="bg-blue-100">
-                <td class="px-6 py-4 text-sm">IEEE Member</td>
-                <td class="px-6 py-4 text-sm">2,000 INR / Day</td>
-            </tr>
-            <tr>
-                <td class="px-6 py-4 text-sm">IEEE TEMS Member</td>
-                <td class="px-6 py-4 text-sm">1,500 INR / Day</td>
-            </tr>
-            <tr class="bg-blue-100">
-                <td class="px-6 py-4 text-sm">Non-IEEE Member</td>
-                <td class="px-6 py-4 text-sm">2,500 INR / Day</td>
-            </tr>
-            </tbody>
-        </table>
-        </div>
+    <!-- Delegates / Participants Table -->
+    <div class="overflow-x-auto shadow-lg mt-8">
+      <table class="min-w-full divide-y divide-gray-300">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-6 py-3 text-left text-sm font-semibold">Delegates / Participants</th>
+            <th class="px-6 py-3 text-left text-sm font-semibold">Fees</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr class="bg-blue-100">
+            <td class="px-6 py-4 text-sm">IEEE Member</td>
+            <td class="px-6 py-4 text-sm">2,000 INR / Day</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-sm">IEEE TEMS Member</td>
+            <td class="px-6 py-4 text-sm">1,500 INR / Day</td>
+          </tr>
+          <tr class="bg-blue-100">
+            <td class="px-6 py-4 text-sm">Non-IEEE Member</td>
+            <td class="px-6 py-4 text-sm">2,500 INR / Day</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        <!-- Register Buttons -->
-        <div class="flex justify-center space-x-4 mt-8">
-            <!-- <a href="#" class="bg-green-500 text-white px-4 py-2 rounded shadow hover:bg-green-600">Author Register</a>
+    <!-- Register Buttons -->
+    <div class="flex justify-center space-x-4 mt-8">
+      <!-- <a href="#" class="bg-green-500 text-white px-4 py-2 rounded shadow hover:bg-green-600">Author Register</a>
             <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded shadow hover:bg-orange-600">Non-Author Register</a> -->
-        </div>
+    </div>
 
-    </section>
+  </section>
 
-<!-- submission guidelines started -->
-<section class=" py-8 bg-gray-100 text-gray-800">
-  <div class="container mx-auto max-w-6xl">
+  <!-- submission guidelines started -->
+  <section class=" py-8 bg-gray-100 text-gray-800" id="submission-guidelines">
+    <div class="container mx-auto max-w-6xl">
       <h2 class="text-3xl font-bold mb-6">Submission Guidelines</h2>
       <p class="mb-4">
-          Prospective authors are invited to submit original technical papers for publication in the TEMSMET 2025. All presented papers will be submitted to the IEEE for possible inclusion in IEEEXplore.
+        Prospective authors are invited to submit original technical papers for publication in the TEMSMET 2025. All
+        presented papers will be submitted to the IEEE for possible inclusion in IEEEXplore.
       </p>
       <p class="mb-4">All papers should adhere to the following guidelines:</p>
-      
+
       <ul class="list-disc pl-8 space-y-2">
-          <li>All conference submissions should be written in English with a maximum paper length of six (6) printed pages (10-point font), including figures and tables.</li>
-          <li>LaTeX is the preferred method to prepare your manuscript. Please use the standard LaTeX IEEE conference template. Please find the format in the download section below.</li>
-          <li>For Microsoft Word, please use the most current version of the IEEE conference template, which will help reduce word-to-pdf conversion issues such as embedded fonts, bookmarks, etc. Please find the format in the download section below.</li>
-          <li>All the co-authors must be listed with affiliation details in the initial submission. No further authors can be added for selected papers.</li>
-          <li>Authors who receive final acceptance after paper revision can only register for the conference. The authors will also be expected to submit a final version of the manuscript that will be added to IEEE proceedings as per the conference template.</li>
-          <li>Please upload camera-ready paper and an eCopy transfer file in Microsoft CMT.</li>
-          <li>All the registered papers must be presented at the conference.</li>
-          <li>Please make sure that the camera-ready paper has been generated by the template provided to you (Contains IEEE copyright notice on the first page bottom left, and the conference name as the footer on the rest of the pages) and verified with the <a href="https://ieee-pdf-express.org" target="_blank" class="text-blue-600 underline">PDF Express website</a>.</li>
-          <li>The completed IEEE electronic copyright form (ECF) needs to be transferred (as and when it is made available) as per IEEE requirements.</li>
+        <li>All conference submissions should be written in English with a maximum paper length of six (6) printed pages
+          (10-point font), including figures and tables.</li>
+        <li>LaTeX is the preferred method to prepare your manuscript. Please use the standard LaTeX IEEE conference
+          template. Please find the format in the download section below.</li>
+        <li>For Microsoft Word, please use the most current version of the IEEE conference template, which will help
+          reduce word-to-pdf conversion issues such as embedded fonts, bookmarks, etc. Please find the format in the
+          download section below.</li>
+        <li>All the co-authors must be listed with affiliation details in the initial submission. No further authors can
+          be added for selected papers.</li>
+        <li>Authors who receive final acceptance after paper revision can only register for the conference. The authors
+          will also be expected to submit a final version of the manuscript that will be added to IEEE proceedings as
+          per the conference template.</li>
+        <li>Please upload camera-ready paper and an eCopy transfer file in Microsoft CMT.</li>
+        <li>All the registered papers must be presented at the conference.</li>
+        <li>Please make sure that the camera-ready paper has been generated by the template provided to you (Contains
+          IEEE copyright notice on the first page bottom left, and the conference name as the footer on the rest of the
+          pages) and verified with the <a href="https://ieee-pdf-express.org" target="_blank"
+            class="text-blue-600 underline">PDF Express website</a>.</li>
+        <li>The completed IEEE electronic copyright form (ECF) needs to be transferred (as and when it is made
+          available) as per IEEE requirements.</li>
+        <li>Paper Submission <a href="https://cmt3.research.microsoft.com/TEMSMET2025" target="_blank"
+            class="text-blue-600 underline"> TAB </a> </li>
       </ul>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- submisssion guidelines ended -->
+  <!-- submisssion guidelines ended -->
 
-    <!-- Organizing Committee Section -->
-    <section id="organizing-committee" class="py-8 bg-gray-100 text-gray-800">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Organizing Committee</h2>
-        <p class="mb-2 mt-4"><strong>Patron(s):</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Shri C. K. Birla</li>
-        </ul>
+  <!-- Organizing Committee Section -->
+  <section id="organizing-committee" class="py-8 bg-gray-100 text-gray-800">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-6">Organizing Committee</h2>
+      <p class="mb-2 mt-4"><strong>Patron(s):</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Shri C. K. Birla</li>
+      </ul>
 
-        <p class="mb-2 mt-4"><strong>Honorary Chair:</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Prof. (Dr.) Ajay K. Sharma</li>  
-          <li>Sudeendra Koushik, President Elect – IEEE TEMS Global</li>
-        
-          <li> Ravikiran Annaswamy, Past President - IEEE TEMS Global</li>
-        
-          <li>Arun Tanksali, IEEE TEMS Global</li>
-        
-          <li>Kashem Muttaqi, University of Wollongong, Australia</li>
-        </ul>
+      <p class="mb-2 mt-4"><strong>Honorary Chair:</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Prof. (Dr.) Ajay K. Sharma</li>
+        <li>Sudeendra Koushik, President Elect – IEEE TEMS Global</li>
 
-        <p class="mb-2 mt-4"><strong>General Chair(s):</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Hocine Cherifi, University of Burgundi, France</li>
-          <li>Dr. Anurag Singh, NIT Delhi</li>
-        </ul>
+        <li> Ravikiran Annaswamy, Past President - IEEE TEMS Global</li>
 
-        <p class="mb-2 mt-4"><strong>General Co-Chair(s):</strong></p>
-        <ul class="list-decimal ml-6">
-          <li> Yathindranath Tarikere, IEEE TEMS</li>
-          <li>2.   Dr. M. Devanathan, IEEE TEMS </li>
-          
-        </ul>
+        <li>Arun Tanksali, IEEE TEMS Global</li>
 
-        <p class="mb-2 mt-4"><strong>Organizing Secretary(s):</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Dr. Anmol Ratna Saxena, NIT Delhi</li>
-          <li> Prof. Y N Singh, IIT Kanpur</li>
-        </ul>
+        <li>Kashem Muttaqi, University of Wollongong, Australia</li>
+      </ul>
 
-        <p class="mb-2 mt-4"><strong>Program Chair(s):</strong></p>
-        <ul class="list-decimal ml-6">
-          
-          <li>Prof KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
-          <li>Dr. Karan Verma, NIT Delhi</li>
-          <li>Dr. Sabrina Gaito, University of Milan, Italy</li>
-        </ul>
+      <p class="mb-2 mt-4"><strong>General Chair(s):</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Hocine Cherifi, University of Burgundi, France</li>
+        <li>Dr. Anurag Singh, NIT Delhi</li>
+      </ul>
 
-        <p class="mb-2 mt-4"><strong>Publication Chair(s):</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Dr. Mahesh K. Singh, NIT Delhi</li>
-        </ul>
+      <p class="mb-2 mt-4"><strong>General Co-Chair(s):</strong></p>
+      <ul class="list-decimal ml-6">
+        <li> Yathindranath Tarikere, IEEE TEMS</li>
+        <li>2. Dr. M. Devanathan, IEEE TEMS </li>
 
-        <p class="mb-2 mt-4">
-          <strong>Technical Programme Committee Chair(s):</strong>
-        </p>
-        <ul class="list-decimal ml-6">
-          <li>Dr. Bijoy Chand Chatterjee, SAU, Delhi</li>
-          <li>Dr. Pushpendra P. Singh, IIT Ropar</li>
-          <li>Dr. Bindu A Thomas, IEEE TEMS</li>
-          <li> Dr. Rajashree Jain, IEEE TEMS</li>
+      </ul>
 
-          <li>Surendra Reddy Salkuti, Woosung University, South Korea</li>
-        </ul>
+      <p class="mb-2 mt-4"><strong>Organizing Secretary(s):</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Anmol Ratna Saxena, NIT Delhi</li>
+        <li> Prof. Y N Singh, IIT Kanpur</li>
+      </ul>
 
-        <p class="mb-2 mt-4">
-            <strong>Technical Programme Committee Co-Chair(s):</strong>
-          </p>
-          <ul class="list-decimal ml-6">
-            <li>Dr. Mahesh K Singh, NIT Delhi</li>
-            <li>Dr. Neeraj Goel, IIT Ropar</li>
-            <li>Dr. Vinay Singh, ABV IIITM Gwalior</li>
-          </ul>
+      <p class="mb-2 mt-4"><strong>Program Chair(s):</strong></p>
+      <ul class="list-decimal ml-6">
 
-        <p class="mb-2 mt-4">
-          <strong>Web-Master and Technical Coordination Committee Chair(s):</strong>
-        </p>
-        <ul class="list-decimal ml-6">
-          <li>Dr. Karan Verma, NIT Delhi</li>
-          <li>Dr. Gautam Kumar, NIT Delhi</li>
-          <li>Niran N., Volunteer, IEEE TEMS</li>
-        </ul>
+        <li>Prof KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
+        <li>Dr. Karan Verma, NIT Delhi</li>
+        <li>Dr. Sabrina Gaito, University of Milan, Italy</li>
+      </ul>
 
-        <p class="mb-2 mt-4"><strong>Local Organizing Committee:</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Dr. Pankaj Muhija, NIT Delhi</li>
-          <li>Dr. Karan Verma, NIT Delhi</li>
-          <li>Dr. Anmol Ratna Saxena, Delhi</li>
-          <li>Dr. Gautam Kumar, NIT Delhi</li>
-          <li>Dr. Mahesh K. Singh, NIT Delhi</li>
-        </ul>
+      <p class="mb-2 mt-4"><strong>Publication Chair(s):</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Mahesh K. Singh, NIT Delhi</li>
+      </ul>
 
-        <p class="mb-2 mt-4"><strong>Finance Chair(s):</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Dr. Anurag Singh, NIT Delhi</li>
-          <li>Mr. Bill Marshall, Conference Treasurer, IEEE TEMS</li>
-        </ul>
+      <p class="mb-2 mt-4">
+        <strong>Technical Programme Committee Chair(s):</strong>
+      </p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Bijoy Chand Chatterjee, SAU, Delhi</li>
+        <li>Dr. Pushpendra P. Singh, IIT Ropar</li>
+        <li>Dr. Bindu A Thomas, IEEE TEMS</li>
+        <li> Dr. Rajashree Jain, IEEE TEMS</li>
 
-        <p class="mb-2 mt-4"><strong>Technical Programme Committee:</strong></p>
-        <ul class="list-decimal ml-6">
-          <li>Dr. Raju Ranjan, 3Frames Software Labs Private Limited</li>
-          <li>Dr. Rupesh Kumar, Yamaha Motors Solution India Pvt. Ltd.</li>
-          <li>Dr. Anima Majumder, TCS Innovation Labs, Bangalore</li>
-          <li>Dr. Rekha Raja, IIT Hyderabad</li>
-          <li>Dr. Jawar Singh, IIT Patna</li>
-          <li>Dr. Jagdish Bansal, SAU, Delhi</li>
-          <li>Srinavasa Rao Satti, NTNU, Norway</li>
-          <li>Fakhteh Ghanbarnejad, Potsdam Institute for Climate Impact Research (PIK)</li>
-          <li>Prof Shivam Gupta, NEOMA Business School, Mont-Saint-Aignan, France</li>
-          <li>Prof KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
-          <li>Prof Vimal Kumar, Chaoyang University of Technology, Taichung, Taiwan</li>
-          <li>Dr J K Jha, Associate Professor, Industrial & Systems Engineering, Indian Institute of Technology Kharagpur</li>
-          <li>Mazalov Vladimir, Institute of Applied Mathematical Research, Karelia Research Center of Russian Academy of Sciences, Russia</li>
-          <li>Bapi Chaterji, IIIT Delhi</li>
-          <li>R K Agrawal, JNU</li>
-          <li>Anish Mukherjee, NVIDIA</li>
-          <li>Kamlesh Tiwari, BITS Pilani</li>
-          <li>Debayan Chakraborty, Accenture Operations Ai Research and Development team</li>
-          <li>Divest Dixit, Co-Founder BambooBox</li>
-          <li>Dhiraj Madan, IBM diffusion models</li>
-          <li>Mitul Kumar Ahirwar, MANIT Bhopal</li>
-          <li>Namita Mittal, MNIT Jaipur</li>
-          <li>Dushyant Singh, NIT Allahabad</li>
-          <li>Sabrina Gaito, University of Milan, Italy</li>
-          <li>Krishna Kummamuru, Principal Director, AI Innovations & Products, Accenture Operations at Accenture</li>
-          <li>Rahul Goel, PhD, MTS ML Scientist, PayPal, India</li>
-          <li>Amol Bhopale, IIIT Nagpur</li>
-          <li>Ashish Tiwari, VNIT Nagpur</li>
-          <li>Chantal Cherifi, University of Lyon, France</li>
-          <li>Vinod Kumar Jain, IIITDM Jabalpur</li>
+        <li>Surendra Reddy Salkuti, Woosung University, South Korea</li>
+      </ul>
 
-          <li>Aparajita Ojha, IIITDM Jabalpur</li>
-        </ul>
+      <p class="mb-2 mt-4">
+        <strong>Technical Programme Committee Co-Chair(s):</strong>
+      </p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Mahesh K Singh, NIT Delhi</li>
+        <li>Dr. Neeraj Goel, IIT Ropar</li>
+        <li>Dr. Vinay Singh, ABV IIITM Gwalior</li>
+      </ul>
 
-        <p class="mb-2 mt-4">
-          <strong>Publicity & Sponsorship Chair(s):</strong>
-        </p>
-        <ul class="list-decimal ml-6">
-          <li>Yathi T J</li>
-          <li>Devanathan M</li>
-        </ul>
-      </div>
-    </section>
+      <p class="mb-2 mt-4">
+        <strong>Web-Master and Technical Coordination Committee Chair(s):</strong>
+      </p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Karan Verma, NIT Delhi</li>
+        <li>Dr. Gautam Kumar, NIT Delhi</li>
+        <li>Niran N., Volunteer, IEEE TEMS</li>
+      </ul>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 TEMSMET. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+      <p class="mb-2 mt-4"><strong>Local Organizing Committee:</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Pankaj Muhija, NIT Delhi</li>
+        <li>Dr. Karan Verma, NIT Delhi</li>
+        <li>Dr. Anmol Ratna Saxena, Delhi</li>
+        <li>Dr. Gautam Kumar, NIT Delhi</li>
+        <li>Dr. Mahesh K. Singh, NIT Delhi</li>
+      </ul>
+
+      <p class="mb-2 mt-4"><strong>Finance Chair(s):</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Anurag Singh, NIT Delhi</li>
+        <li>Mr. Bill Marshall, Conference Treasurer, IEEE TEMS</li>
+      </ul>
+
+      <p class="mb-2 mt-4"><strong>Technical Programme Committee:</strong></p>
+      <ul class="list-decimal ml-6">
+        <li>Dr. Raju Ranjan, 3Frames Software Labs Private Limited</li>
+        <li>Dr. Rupesh Kumar, Yamaha Motors Solution India Pvt. Ltd.</li>
+        <li>Dr. Anima Majumder, TCS Innovation Labs, Bangalore</li>
+        <li>Dr. Rekha Raja, IIT Hyderabad</li>
+        <li>Dr. Jawar Singh, IIT Patna</li>
+        <li>Dr. Jagdish Bansal, SAU, Delhi</li>
+        <li>Srinavasa Rao Satti, NTNU, Norway</li>
+        <li>Fakhteh Ghanbarnejad, Potsdam Institute for Climate Impact Research (PIK)</li>
+        <li>Prof Shivam Gupta, NEOMA Business School, Mont-Saint-Aignan, France</li>
+        <li>Prof KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
+        <li>Prof Vimal Kumar, Chaoyang University of Technology, Taichung, Taiwan</li>
+        <li>Dr. J K Jha, Associate Professor, Industrial & Systems Engineering, Indian Institute of Technology Kharagpur
+        </li>
+        <li>Mazalov Vladimir, Institute of Applied Mathematical Research, Karelia Research Center of Russian Academy of
+          Sciences, Russia</li>
+        <li>Bapi Chaterji, IIIT Delhi</li>
+        <li>R K Agrawal, JNU</li>
+        <li>Anish Mukherjee, NVIDIA</li>
+        <li>Kamlesh Tiwari, BITS Pilani</li>
+        <li>Debayan Chakraborty, Accenture Operations Ai Research and Development team</li>
+        <li>Divest Dixit, Co-Founder BambooBox</li>
+        <li>Dhiraj Madan, IBM diffusion models</li>
+        <li>Mitul Kumar Ahirwar, MANIT Bhopal</li>
+        <li>Namita Mittal, MNIT Jaipur</li>
+        <li>Dushyant Singh, MNNIT Allahabad</li>
+        <li>Sabrina Gaito, University of Milan, Italy</li>
+        <li>Krishna Kummamuru, Principal Director, AI Innovations & Products, Accenture Operations at Accenture</li>
+        <li>Rahul Goel, PhD, MTS ML Scientist, PayPal, India</li>
+        <li>Amol Bhopale, IIIT Nagpur</li>
+        <li>Ashish Tiwari, VNIT Nagpur</li>
+        <li>Chantal Cherifi, University of Lyon, France</li>
+        <li>Vinod Kumar Jain, IIITDM Jabalpur</li>
+        <li>Aparajita Ojha, IIITDM Jabalpur</li>
+        <li>Akrati Saxena, Leiden University, Netherlands</li>
+        <li>Prashant Kumar, NIT Delhi</li>
+        <li>Indu Joshi, IIT Ropar</li>
+        <li>Tony Jacob, IIT Guwahati</li>
+        <li>Anupam Gupta, BlockApps AI Private Limited</li>
+        <li>Mohit Jain, Microsoft Research Lab, India</li>
+        <li>Gaurav Goel, Principal Architect, Parallel Wireless</li>
+        <li>Tanvir Ahmad, Jamia Millia Islamia, Delhi</li>
+        <li>Dr. Basant Singh Sikarwar, Amity School of Engineering & Technology, Noida</li>
+        <li>Gyan Singh Yadav, IIIT Kota</li>
+        <li>Ganga Pandey, Pandit Deendayal Petroleum University, Gandhinagar, Gujarat</li>
+        <li>Mrinal Kaushik, IIT Kharagpur</li>
+        <li>Praveen Kumar Tripathi, IIT Guwahati</li>
+        <li>Satyam Agarwal, IIT Ropar</li>
+        <li>Pradyumn Pandey, IIT Roorkee</li>
+        <li>Prasanna Kumar Misra, IIIT Allahabad</li>
+        <li>Ramesh Kumar Sonkar, IIT Guwahati</li>
+        <li>Ranveer, IIT Indore</li>
+        <li>Rituparna Datta, University of South Alabama, USA</li>
+        <li>Pallavi Athe, IISER Bhopal</li>
+
+      </ul>
+
+      <p class="mb-2 mt-4">
+        <strong>Publicity & Sponsorship Chair(s):</strong>
+      </p>
+      <ul class="list-decimal ml-6">
+        <li>Yathi T J</li>
+        <li>Devanathan M</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 TEMSMET. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
