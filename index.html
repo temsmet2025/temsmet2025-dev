@@ -68,7 +68,22 @@
           Exhibitors was Commented for the replacement with Submission Guidelines on oct 3-2024 as discussed by sir by Parvej Khan-->
         <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#submission-guidelines">Submission
           Guidelines</a>
-        <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#call-for-papers">Call for Papers</a>
+        <div class="relative">
+          <a id="call-for-papers" class="text-white hover:text-slate-400 cursor-pointer flex items-center text-sm"
+            href="#">Call for Papers
+            <i class="fas fa-chevron-down ml-2"></i>
+          </a>
+          <!-- Submenu -->
+          <div id="call-for-papers-submenu"
+            class="absolute left-0 text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]">
+            <a href="#call-for-papers-tracks"
+              class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference Tracks</a>
+            <a href="#submission-guidelines"
+              class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Paper Preparation and Submission Guidelines for Authors</a>
+            <a href="#important-dates"
+              class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Important Dates</a>
+          </div>
+        </div>
         <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#registration">Registration</a>
         <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#organizing-committee">Organizing
           Committee</a>
@@ -175,6 +190,10 @@
           2025 IEEE 4th International Conference on Technology, Engineering,
           Management for Societal Impact using Marketing, Entrepreneurship,
           and Talent (TEMSMET)
+        </p>
+        <p class="text-[32px] text-white suttitle">
+          NOV 6-7, 2025<br />
+          National Institute of Technology Delhi, New Delhi, India
         </p>
       </div>
     </div>
@@ -402,7 +421,7 @@
       <iframe class="map-location"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17424.126437601928!2d77.1329659!3d28.8165378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b1923ada2e3%3A0x1169930518add2fe!2sNational%20Institute%20of%20Technology%20Delhi!5e1!3m2!1sen!2sin!4v1725867350072!5m2!1sen!2sin"
         style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="relative overflow-x-auto mb-2 mt-6">
+      <div class="relative overflow-x-auto mb-2 mt-6" id="important-dates">
         <h2 class="text-3xl font-bold mb-6">Important Dates</h2>
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -510,7 +529,7 @@
         <p>July 06, 2025</p>
       </div>
     </section> -->
-  <section id="tracks" class="bg-white text-gray-800 p-8 lg:px-2">
+  <section id="call-for-papers-tracks" class="bg-white text-gray-800 p-8 lg:px-2">
     <div class="container mx-auto max-w-6xl">
       <h2 class="text-3xl font-bold mb-6">Call for Papers</h2>
 
@@ -526,26 +545,26 @@
           <li>Grid forming Technologies (Grid forming/Grid tied converters etc.)</li>
           <li>Modular Multilevel Converters</li>
         </ul>
-      </div> --> <!-- track removed -->
+      </div> --> <!-- track removed as per doc 04-oct -->
 
       <!-- Track 2 -->
       <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 1 - Data Analysis, Artificial Intelligence and Communication for
-          Power Electronics Systems</h3>
+        <h3 class="text-3l font-semibold mb-4">Track 1 - Innovations in Power Electronics Technologies for Sustainable Development</h3>
         <ul class="list-disc pl-8 space-y-2">
-          <li>Data Analysis Applied to Power Electronics and Drive Systems</li>
+          <li>Power Converter Topologies</li>
+          <li>Power Electronics Systems for Renewable and Alternative Energy</li>
+          <li>Power Electronics Topologies for Green Hydrogen</li>
+          <li>Power Electronics for Electric and Hybrid Electric Vehicles</li>
           <li>Application of Artificial Intelligence to Power Electronics and Drive Systems</li>
           <li>Security Aspects of Cyber Physical Energy Systems</li>
-          <li>Wireless Control of Power Electronics Systems</li>
           <li>Digital Twin of Power Electronic Converters and Systems</li>
           <li>Big Data and Artificial Intelligence in Energy Conversion</li>
+          <li>IoT for Power Electronics Systems</li>
         </ul>
       </div>
-
-      <!-- Track 3 -->
+      
       <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 2 - Artificial Intelligence, Machine Learning, and Data Science
-        </h3>
+        <h3 class="text-3l font-semibold mb-4">Track 2 - Artificial Intelligence, Machine Learning, and Data Science</h3>
         <ul class="list-disc pl-8 space-y-2">
           <li>Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks</li>
           <li>Generative Adversarial Networks (GANs)</li>
@@ -555,19 +574,16 @@
           <li>Object Detection and Recognition</li>
           <li>Image Segmentation and Classification</li>
           <li>Augmented Reality (AR) and Virtual Reality (VR) Applications</li>
-          <li>Multi-Agent Systems</li>
           <li>Applications in Robotics and Autonomous Systems</li>
           <li>Predictive Analytics and Forecasting</li>
           <li>Data Visualization Techniques</li>
           <li>Social Network Analysis</li>
-          <li>AI Ethics and applications</li>
-          <li>Machine Learning and applications</li>
-          <li>Financial Modeling and Fraud Detection</li>
+          <li>AI Ethics and Applications</li>
+          <li>Machine Learning and Applications</li>
           <li>Smart Manufacturing and Industry 4.0</li>
         </ul>
       </div>
-
-      <!-- Track 4 -->
+      
       <div class="mb-8">
         <h3 class="text-3l font-semibold mb-4">Track 3 - Systems, Networking, and Cybersecurity</h3>
         <ul class="list-disc pl-8 space-y-2">
@@ -578,220 +594,69 @@
           <li>Sensor Networks and Data Acquisition</li>
           <li>Smart Cities and Smart Homes</li>
           <li>Cryptography and Encryption Techniques</li>
-          <li>Intrusion Detection and Prevention Systems</li>
-          <li>Cyber Threat Intelligence and Analytics</li>
           <li>Blockchain and Decentralized Systems</li>
           <li>Blockchain Security and Privacy</li>
           <li>High-Performance Computing (HPC)</li>
-          <li>Parallel Algorithms and Distributed Computing</li>
-          <li>GPU Computing and Accelerators</li>
-          <li>HPC Applications in Scientific Research</li>
           <li>Software-Defined Networking (SDN) and Network Function Virtualization (NFV)</li>
-          <li>Programmable Networks</li>
-          <li>Network Automation and Orchestration</li>
-          <li>Performance Optimization in SDN/NFV</li>
           <li>Data Privacy and Protection</li>
           <li>Embedded Systems and Real-Time Computing</li>
         </ul>
       </div>
-
-      <!-- </section>
-  <section id="business-management-tracks" class="px-4 py-8 bg-white text-gray-800">
-    <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl font-bold mb-6">Business Management Track</h2> -->
+      
       <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 4 - Digital Transformation and Industry 5.0</h3>
+        <h3 class="text-3l font-semibold mb-4">Track 4 - Digital Transformation and AI-Driven Business Innovation</h3>
         <ul class="list-disc pl-8 space-y-2">
-          <li>Smart manufacturing and automation</li>
-          <li>Predictive maintenance and AI-driven production systems</li>
-          <li>Digital twins and simulation in business models</li>
-          <li>Real-time data analytics for decision-making</li>
-          <li>Organizational change management in digital transformations</li>
-          <li>AI-driven customer relationship management (CRM) and personalization</li>
-          <li>Machine learning for predictive business analytics</li>
-          <li>Ethical AI: Addressing bias and transparency</li>
-          <li>AI-powered financial forecasting and risk management</li>
-          <li>Automation of decision-making processes in management</li>
+          <li>Smart Manufacturing and Automation</li>
+          <li>Predictive Maintenance and AI-Driven Production Systems</li>
+          <li>Digital Twins and Simulation in Business Models</li>
+          <li>Real-Time Data Analytics for Decision-Making</li>
+          <li>Organizational Change Management in Digital Transformations</li>
+          <li>AI-Driven CRM and Personalization</li>
+          <li>Machine Learning for Predictive Business Analytics</li>
+          <li>Ethical AI: Addressing Bias and Transparency</li>
+          <li>AI-Powered Financial Forecasting and Risk Management</li>
+          <li>Automation of Decision-Making Processes in Management</li>
+          <li>Blockchain in Supply Chain and Finance</li>
+          <li>Decentralized Finance (DeFi) and Blockchain Adoption</li>
+          <li>Financial Institutions and Sustainability</li>
+          <li>Digital Currencies, CBDCs, and Cryptocurrency Regulation</li>
+          <li>Blockchain in Cross-Border Payments and Trade Finance</li>
+          <li>AI and Machine Learning in Risk Assessment and Fraud Detection</li>
+          <li>Cloud-Based Analytics Platforms for Agile Business Decisions</li>
+          <li>Cybersecurity and Data Privacy Challenges in Data-Driven Organizations</li>
+          <li>Edge Computing and Its Business Applications</li>
+          <li>Cloud Security and Governance Framework</li>
         </ul>
       </div>
-
-      <!-- Track 2 -->
+      
       <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 5 - Blockchain in Sustainable Finance and Fintech</h3>
+        <h3 class="text-3l font-semibold mb-4">Track 5 - Signal Processing, Communication and Networks for Generative AI</h3>
         <ul class="list-disc pl-8 space-y-2">
-          <li>ESG metrics and sustainable finance</li>
-          <li>Blockchain in supply chain and finance</li>
-          <li>Decentralized finance (DeFi) and blockchain adoption</li>
-          <li>Financial institutions and sustainability</li>
-          <li>Digital currencies, CBDCs (Central Bank Digital Currencies), and cryptocurrency regulation</li>
-          <li>AI and machine learning in risk assessment and fraud detection</li>
-          <li>Peer-to-peer lending, robo-advisors, and the democratization of finance</li>
-          <li>Blockchain in cross-border payments and trade finance</li>
-          <li>Open banking and the rise of API-driven financial services</li>
-        </ul>
-      </div>
-
-      <!-- Track 3 -->
-      <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 6 - Business Intelligence and Cloud Computing in Business
-          Innovation</h3>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>Data-driven business models and monetization strategies</li>
-          <li>Advanced data visualization and storytelling for executives</li>
-          <li>Real-time business intelligence for competitive advantage</li>
-          <li>Cloud-based analytics platforms for agile business decisions</li>
-          <li>Cybersecurity and data privacy challenges in data-driven organizations</li>
-          <li>Cloud-native architecture and enterprise solutions</li>
-          <li>Hybrid cloud strategies for business agility</li>
-          <li>Cloud security and governance frameworks</li>
-          <li>Edge computing and its business applications</li>
-        </ul>
-      </div>
-
-      <!-- Track 4 -->
-      <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 7 - Digital Marketing, Disruptive Business Models, and Gig Economy
-        </h3>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>AI-powered digital marketing and customer segmentation</li>
-          <li>Omni-channel marketing strategies for a seamless customer experience</li>
-          <li>Personalization in e-commerce through machine learning</li>
-          <li>Voice search, chatbots, and conversational commerce</li>
-          <li>Data-driven customer experience management</li>
-          <li>The role of automation and AI in reshaping job roles</li>
-          <li>Gig economy platforms and their role in future employment</li>
-          <li>Managing remote teams and productivity in the digital age</li>
-          <li>Workforce reskilling for automation and AI</li>
-          <li>Legal and policy implications of the gig economy</li>
-          <li>Managing innovation in the age of disruption</li>
-          <li>Open innovation and co-creation with stakeholders</li>
-          <li>Disruptive technologies and their impact on traditional industries</li>
-          <li>Lean startup methodologies for corporate innovation</li>
-        </ul>
-      </div>
-
-      <!-- Track 5 -->
-      <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 8 - Signal Processing, Communication, and Networks for Generative
-          AI</h3>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>Applied Signal Processing Systems</li>
           <li>Audio & Acoustic Signal Processing</li>
-          <li>Biomedical Imaging & Signal Processing</li>
-          <li>Compressive Sensing, Sparse Modeling</li>
-          <li>Computational Imaging</li>
-          <li>Computer Vision</li>
-          <li>Deep Learning/Machine Learning for Signal Processing</li>
-          <li>Image, Video & Multidimensional Signal Processing</li>
-          <li>Industrial Signal Processing</li>
-          <li>Information Forensics & Security</li>
-          <li>Internet of Things</li>
-          <li>Multimedia Signal Processing</li>
-          <li>Quantum Signal Processing</li>
-          <li>Remote Sensing & Signal Processing</li>
-          <li>Sensor Array & Multichannel SP</li>
-          <li>Signal Processing for Big Data</li>
-          <li>Signal Processing for Communication</li>
-          <li>Signal Processing for Cyber Security</li>
-          <li>Signal Processing for Education</li>
-          <li>Signal Processing for Robotics</li>
-          <li>Signal Processing Over Graphs</li>
-          <li>Signal Processing Theory & Methods</li>
-          <li>Speech and Language Processing</li>
-          <li>Optical Fibre Communication and Systems</li>
-          <li>Computer and Intelligent Communication</li>
-          <li>Wireless and Broadband Communication and Sensor Networks</li>
-          <li>Network Security</li>
-          <li>RF Antenna Design and Modeling</li>
-          <li>Cognitive Communications</li>
-          <li>Analog/Digital Communication Systems</li>
+          <li>Image, Video & Multidimensional Signal Processing, Computer Vision</li>
+          <li>Wireless and Optical Fibre and Sensor Networks</li>
+          <li>RF & Microwave Communication, Antenna Design</li>
           <li>LTE, 5G and 6G Design</li>
+          <li>Internet-of-Things and Its Applications</li>
+          <li>Design, Construction, Control of Mobile Robots and Outdoor Services</li>
+          <li>Aerial Robots (Guidance, Navigation and Control)</li>
+          <li>Man-Machine Interfaces Applied to Single and Multi-Robot Systems</li>
         </ul>
       </div>
-
-      <!-- Track 6 -->
+      
       <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 9 - VLSI Technology and Embedded System for Generative AI</h3>
+        <h3 class="text-3l font-semibold mb-4">Track 6 - VLSI Technology and Embedded System for Generative AI</h3>
         <ul class="list-disc pl-8 space-y-2">
-          <li>VLSI Design</li>
-          <li>High Speed/Low Power Circuits</li>
+          <li>VLSI Design, High Speed/Low Power Circuits</li>
           <li>Digital Circuits and FPGA Based Designs</li>
           <li>Analog/Mixed Signal System Design</li>
           <li>Deep Submicron Design and Modeling Issues</li>
-          <li>Testing and Verification</li>
           <li>Emerging Semiconductor Technologies</li>
           <li>Real-Time Embedded Systems and Applications</li>
           <li>Distributed Embedded Computing</li>
-          <li>Internet-of-Things</li>
         </ul>
       </div>
-
-      <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 11 - Next-Gen Communications, Networks, and IoT for Generative AI
-        </h3>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>Physical layer aspects, Connectivity-judicious network</li>
-          <li>Self-healing networks, Adaptive network design</li>
-          <li>Instant deployability</li>
-          <li>Inherent security</li>
-          <li>Reportability</li>
-          <li>Network Optimization</li>
-          <li>Environmentally expansive</li>
-          <li>New medium layer aspects</li>
-          <li>Network layer protocols for wide area applications</li>
-          <li>Heterogeneous Wireless Network Communications</li>
-          <li>Deterministic Propagation Modelling</li>
-          <li>Energy self-aware network</li>
-          <li>Next Generation Communications</li>
-          <li>Coding theory and Digital Signal Processing</li>
-          <li>ML methods in communications</li>
-          <li>Industrial IoT and industrial data processing</li>
-          <li>Sensing and actuation in environmental/industrial/biomedical applications</li>
-          <li>Wearable sensing and wireless sensor networks</li>
-          <li>Embedded AI</li>
-          <li>Post-quantum (code-based) cryptography</li>
-          <li>Information Protection in Computer Systems and Networks</li>
-        </ul>
-      </div>
-      <div class="mb-8">
-        <h3 class="text-3l font-semibold mb-4">Track 12 - Robotics and Cybernetics for Generative AI</h3>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>Robots development and their applications</li>
-          <li>Outdoor service robots (security, rescue, inspection, agriculture, construction, etc.)</li>
-          <li>Aerial robots (Guidance, Navigation and Control)</li>
-          <li>Artificial intelligence, remote sensing</li>
-          <li>Man-machine interfaces applied to single and multi-robot systems</li>
-          <li>Design, construction, and control of mobile robots</li>
-          <li>Operation and programming of modern industrial robots and manipulators</li>
-          <li>Process control in areas such as production, transport, power infrastructure, ecology, healthcare,
-            intelligent
-            buildings, household, mobile applications, etc.</li>
-          <li>Design and programming of industrial control systems and other intelligent devices</li>
-          <li>Programming and implementation of networked control systems based on advanced communication and software
-            technologies</li>
-          <li>Artificial intelligence, telemedicine, and biocybernetics</li>
-          <li>Genomic data analysis</li>
-          <li>Data mining</li>
-          <li>Machine learning</li>
-          <li>Data management</li>
-          <li>Adapted Cybernetics</li>
-          <li>Medical Cybernetics</li>
-          <li>Fisheries and Aquaculture Cybernetics</li>
-          <li>Process Cybernetics</li>
-          <li>Navigation, Vessel Control Systems, and Robotic Technology</li>
-          <li>Case-Based Reasoning</li>
-          <li>Decision Analysis</li>
-          <li>Intelligent Databases & Information Retrieval</li>
-          <li>Dynamic Systems Modeling</li>
-          <li>Decision Support Systems</li>
-          <li>Multi-criteria Decision Making</li>
-          <li>Qualitative and Approximate-Reasoning Modeling</li>
-          <li>Behavioral Decision Making</li>
-          <li>Distributed Decision Making</li>
-          <li>Information and Decision Systems</li>
-          <li>Risk Management</li>
-        </ul>
-      </div>
+      
 
     </div>
   </section>
@@ -960,7 +825,8 @@
             class="text-blue-600 underline">PDF Express website</a>.</li>
         <li>The completed IEEE electronic copyright form (ECF) needs to be transferred (as and when it is made
           available) as per IEEE requirements.</li>
-        <li>Paper Submission TAB https://cmt3.research.microsoft.com/TEMSMET2025</li>
+        <li>Paper <a href="https://cmt3.research.microsoft.com/TEMSMET2025" target="_blank"
+            class="text-blue-900">Submission Link </a> </li>
       </ul>
     </div>
   </section>
@@ -972,12 +838,12 @@
     <div class="container mx-auto max-w-6xl">
       <h2 class="text-3xl font-bold mb-6">Organizing Committee</h2>
       <p class="mb-2 mt-4"><strong>Patron(s):</strong></p>
-      <ul class="list-decimal ml-6">
+      <ul class=" ml-6">
         <li>Shri C. K. Birla</li>
       </ul>
 
       <p class="mb-2 mt-4"><strong>Honorary Chair:</strong></p>
-      <ul class="list-decimal ml-6">
+      <ul class=" ml-6">
         <li>Prof. (Dr.) Ajay K. Sharma</li>
         <li>Sudeendra Koushik, President Elect – IEEE TEMS Global</li>
 
@@ -989,45 +855,44 @@
       </ul>
 
       <p class="mb-2 mt-4"><strong>General Chair(s):</strong></p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Sabrina Gaito, University of Milan, Italy</li>
-        <li>Dr. Anurag Singh, NIT Delhi</li>
+      <ul class=" ml-6">
+        <li>Sabrina Gaito, University of Milan, Italy</li>
+        <li>Anurag Singh, NIT Delhi</li>
       </ul>
 
       <p class="mb-2 mt-4"><strong>General Co-Chair(s):</strong></p>
-      <ul class="list-decimal ml-6">
+      <ul class=" ml-6">
         <li> Yathindranath Tarikere, IEEE TEMS</li>
-        <li>2. Dr. M. Devanathan, IEEE TEMS </li>
+        <li>2. M. Devanathan, IEEE TEMS </li>
 
       </ul>
 
       <p class="mb-2 mt-4"><strong>Organizing Secretary(s):</strong></p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Anmol Ratna Saxena, NIT Delhi</li>
+      <ul class=" ml-6">
+        <li>Anmol Ratna Saxena, NIT Delhi</li>
         <li> Prof. Y N Singh, IIT Kanpur</li>
       </ul>
 
-      <p class="mb-2 mt-4"><strong>Program Chair(s):</strong></p>
-      <ul class="list-decimal ml-6">
-
-        <li>Prof KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
-        <li>Dr. Karan Verma, NIT Delhi</li>
+      <p class="mb-2 mt-4"><strong>Publication Committee:</strong></p>
+      <ul class=" ml-6">
+        <li>Mahesh K. Singh, NIT Delhi</li>
+        <li>KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
+        <li>Kashem Muttaqi, University of Wollongong, Australia</li>
+        <li>Karan Verma, NIT Delhi</li>
         <li>Hocine Cherifi, University of Burgundi, France</li>
-      </ul>
-
-      <p class="mb-2 mt-4"><strong>Publication Chair(s):</strong></p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Mahesh K. Singh, NIT Delhi</li>
+        <li>Priyesh Chauhan, IIITRAM, Ahmedabad</li>
+        <li>   Mahesh K. Singh, NIT Delhi</li>
+        <li>	Praveen Bansal, MITS Gwalior</li>
       </ul>
 
       <p class="mb-2 mt-4">
         <strong>Technical Programme Committee Chair(s):</strong>
       </p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Bijoy Chand Chatterjee, SAU, Delhi</li>
-        <li>Dr. Pushpendra P. Singh, IIT Ropar</li>
-        <li>Dr. Bindu A Thomas, IEEE TEMS</li>
-        <li> Dr. Rajashree Jain, IEEE TEMS</li>
+      <ul class=" ml-6">
+        <li>Bijoy Chand Chatterjee, SAU, Delhi</li>
+        <li>Pushpendra P. Singh, IIT Ropar</li>
+        <li>Bindu A Thomas, IEEE TEMS</li>
+        <li> Rajashree Jain, IEEE TEMS</li>
 
         <li>Surendra Reddy Salkuti, Woosung University, South Korea</li>
       </ul>
@@ -1035,50 +900,50 @@
       <p class="mb-2 mt-4">
         <strong>Technical Programme Committee Co-Chair(s):</strong>
       </p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Mahesh K Singh, NIT Delhi</li>
-        <li>Dr. Neeraj Goel, IIT Ropar</li>
-        <li>Dr. Vinay Singh, ABV IIITM Gwalior</li>
+      <ul class=" ml-6">
+        <li>Mahesh K Singh, NIT Delhi</li>
+        <li>Neeraj Goel, IIT Ropar</li>
+        <li>Vinay Singh, ABV IIITM Gwalior</li>
       </ul>
 
       <p class="mb-2 mt-4">
         <strong>Web-Master and Technical Coordination Committee Chair(s):</strong>
       </p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Karan Verma, NIT Delhi</li>
-        <li>Dr. Gautam Kumar, NIT Delhi</li>
+      <ul class=" ml-6">
+        <li>Karan Verma, NIT Delhi</li>
+        <li>Gautam Kumar, NIT Delhi</li>
         <li>Niran N., Volunteer, IEEE TEMS</li>
       </ul>
 
       <p class="mb-2 mt-4"><strong>Local Organizing Committee:</strong></p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Pankaj Muhija, NIT Delhi</li>
-        <li>Dr. Karan Verma, NIT Delhi</li>
-        <li>Dr. Anmol Ratna Saxena, Delhi</li>
-        <li>Dr. Gautam Kumar, NIT Delhi</li>
-        <li>Dr. Mahesh K. Singh, NIT Delhi</li>
+      <ul class=" ml-6">
+        <li>Pankaj Muhija, NIT Delhi</li>
+        <li>Karan Verma, NIT Delhi</li>
+        <li>Anmol Ratna Saxena, Delhi</li>
+        <li>Gautam Kumar, NIT Delhi</li>
+        <li>Mahesh K. Singh, NIT Delhi</li>
       </ul>
 
       <p class="mb-2 mt-4"><strong>Finance Chair(s):</strong></p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Anurag Singh, NIT Delhi</li>
+      <ul class=" ml-6">
+        <li>Anurag Singh, NIT Delhi</li>
         <li>Mr. Bill Marshall, Conference Treasurer, IEEE TEMS</li>
       </ul>
 
       <p class="mb-2 mt-4"><strong>Technical Programme Committee:</strong></p>
-      <ul class="list-decimal ml-6">
-        <li>Dr. Raju Ranjan, 3Frames Software Labs Private Limited</li>
-        <li>Dr. Rupesh Kumar, Yamaha Motors Solution India Pvt. Ltd.</li>
-        <li>Dr. Anima Majumder, TCS Innovation Labs, Bangalore</li>
-        <li>Dr. Rekha Raja, IIT Hyderabad</li>
-        <li>Dr. Jawar Singh, IIT Patna</li>
-        <li>Dr. Jagdish Bansal, SAU, Delhi</li>
+      <ul class=" ml-6">
+        <li>Raju Ranjan, 3Frames Software Labs Private Limited</li>
+        <li>Rupesh Kumar, Yamaha Motors Solution India Pvt. Ltd.</li>
+        <li>Anima Majumder, TCS Innovation Labs, Bangalore</li>
+        <li>Rekha Raja, IIT Hyderabad</li>
+        <li>Jawar Singh, IIT Patna</li>
+        <li>Jagdish Bansal, SAU, Delhi</li>
         <li>Srinavasa Rao Satti, NTNU, Norway</li>
         <li>Fakhteh Ghanbarnejad, Potsdam Institute for Climate Impact Research (PIK)</li>
-        <li>Prof Shivam Gupta, NEOMA Business School, Mont-Saint-Aignan, France</li>
-        <li>Prof KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
-        <li>Prof Vimal Kumar, Chaoyang University of Technology, Taichung, Taiwan</li>
-        <li>Dr. J K Jha, Associate Professor, Industrial & Systems Engineering, Indian Institute of Technology Kharagpur
+        <li>Shivam Gupta, NEOMA Business School, Mont-Saint-Aignan, France</li>
+        <li>KK Lai, Chaoyang University of Technology, Taichung, Taiwan</li>
+        <li>Vimal Kumar, Chaoyang University of Technology, Taichung, Taiwan</li>
+        <li>J K Jha, Associate Professor, Industrial & Systems Engineering, Indian Institute of Technology Kharagpur
         </li>
         <li>Mazalov Vladimir, Institute of Applied Mathematical Research, Karelia Research Center of Russian Academy of
           Sciences, Russia</li>
@@ -1108,7 +973,7 @@
         <li>Mohit Jain, Microsoft Research Lab, India</li>
         <li>Gaurav Goel, Principal Architect, Parallel Wireless</li>
         <li>Tanvir Ahmad, Jamia Millia Islamia, Delhi</li>
-        <li>Dr. Basant Singh Sikarwar, Amity School of Engineering & Technology, Noida</li>
+        <li>Basant Singh Sikarwar, Amity School of Engineering & Technology, Noida</li>
         <li>Gyan Singh Yadav, IIIT Kota</li>
         <li>Ganga Pandey, Pandit Deendayal Petroleum University, Gandhinagar, Gujarat</li>
         <li>Mrinal Kaushik, IIT Kharagpur</li>
@@ -1126,7 +991,7 @@
       <p class="mb-2 mt-4">
         <strong>Publicity & Sponsorship Chair(s):</strong>
       </p>
-      <ul class="list-decimal ml-6">
+      <ul class=" ml-6">
         <li>Yathi T J</li>
         <li>Devanathan M</li>
       </ul>
