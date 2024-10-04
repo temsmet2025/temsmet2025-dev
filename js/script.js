@@ -43,13 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("click", function (e) {
     if (
-      (!pastEditionsLink.contains(e.target) &&
-        !pastEditionsSubmenu.contains(e.target)) ||
-      (!pastEditionsLinkMobile.contains(e.target) &&
-        !pastEditionsSubmenuMobile.contains(e.target))
+      !pastEditionsLink.contains(e.target) &&
+      !pastEditionsSubmenu.contains(e.target)
     ) {
       pastEditionsSubmenu.classList.remove("submenu-visible");
       pastEditionsSubmenu.classList.add("submenu-hidden");
+    }
+
+    if (
+      !pastEditionsLinkMobile.contains(e.target) &&
+      !pastEditionsSubmenuMobile.contains(e.target)
+    ) {
+      pastEditionsSubmenuMobile.classList.remove("submenu-visible");
+      pastEditionsSubmenuMobile.classList.add("submenu-hidden");
     }
   });
 
