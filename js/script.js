@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const aboutSubmenu = document.getElementById("about-submenu");
   const pastEditionsLink = document.getElementById("past-editions-link");
   const pastEditionsSubmenu = document.getElementById("past-editions-submenu");
+  const pastEditionsLinkMobile = document.getElementById(
+    "past-editions-link-mobile"
+  );
+  const pastEditionsSubmenuMobile = document.getElementById(
+    "past-editions-submenu-mobile"
+  );
 
   aboutLink.addEventListener("click", function (event) {
     event.preventDefault();
@@ -30,8 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
     pastEditionsSubmenu.classList.toggle("submenu-visible");
   });
 
+  pastEditionsLinkMobile.addEventListener("click", (e) => {
+    e.preventDefault();
+    pastEditionsSubmenuMobile.classList.toggle("submenu-visible");
+  });
+
   document.addEventListener("click", function (e) {
-    if (!pastEditionsLink.contains(e.target) && !pastEditionsSubmenu.contains(e.target)) {
+    if (
+      (!pastEditionsLink.contains(e.target) &&
+        !pastEditionsSubmenu.contains(e.target)) ||
+      (!pastEditionsLinkMobile.contains(e.target) &&
+        !pastEditionsSubmenuMobile.contains(e.target))
+    ) {
       pastEditionsSubmenu.classList.remove("submenu-visible");
       pastEditionsSubmenu.classList.add("submenu-hidden");
     }
@@ -39,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const effects = ["slide", "cube", "fade", "coverflow"];
 
-  $('.owl-carousel').owlCarousel({
+  $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
@@ -47,18 +63,21 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     autoplayTimeout: 5000,
     smartSpeed: 1500,
-    navText: ["<i class='fas fa-2x fa-chevron-left'></i>", "<i class='fas fa-2x fa-chevron-right'></i>"],
+    navText: [
+      "<i class='fas fa-2x fa-chevron-left'></i>",
+      "<i class='fas fa-2x fa-chevron-right'></i>",
+    ],
     dots: false,
     responsive: {
       0: {
-        items: 1
+        items: 1,
       },
       600: {
-        items: 1
+        items: 1,
       },
       1000: {
-        items: 1
-      }
-    }
+        items: 1,
+      },
+    },
   });
 });
