@@ -112,19 +112,50 @@
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-slate-950 text-white space-y-4 p-4">
       <a class="block hover:text-slate-400" href="#home">Home</a>
-      <a class="block hover:text-slate-400" href="#conference-theme">Conference Theme</a>
-      <a class="block hover:text-slate-400" href="#objectives">Objectives</a>
-      <a class="block hover:text-slate-400" href="#target-audience">Target Audience</a>
+      <!-- <a class="block hover:text-slate-400" href="#conference-theme">Conference Theme</a> -->
+      <!-- <a class="block hover:text-slate-400" href="#objectives">Objectives</a> -->
+      <!-- <a class="block hover:text-slate-400" href="#target-audience">Target Audience</a> -->
       <!-- <a class="block hover:text-slate-400" href="#special-tracks">Special Tracks</a> -->
-      <a class="block hover:text-slate-400" href="#conference-structure">Conference Structure</a>
+      <!-- <a class="block hover:text-slate-400" href="#conference-structure">Conference Structure</a> -->
+      <div class="relative">
+        <a id="about-link-mobile" class="text-white hover:text-slate-400 cursor-pointer flex items-center"
+          href="#">About <i class="fas fa-chevron-down ml-2"></i></a>
+        <!-- Submenu -->
+        <div id="about-submenu-mobile" class="text-white py-2 rounded-md shadow-lg submenu-hidden w-full">
+          <a href="#conference-theme" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+            Theme</a>
+          <a href="#objectives" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Objectives</a>
+          <a href="#target-audience" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Target Audience</a>
+          <!-- <a href="#special-tracks" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Special Tracks</a> -->
+          <a href="#conference-structure" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+            Structure</a>
+        </div>
+      </div>
       <a class="block hover:text-slate-400" href="#speakers">Potential Speakers</a>
       <a class="block hover:text-slate-400" href="#venue-and-dates">Venue and Dates</a>
-      <a class="block hover:text-slate-400" href="#sponsorship-and-exhibitors">Sponsorship and Exhibitors</a>
-      <a class="block hover:text-slate-400" href="#call-for-papers">Call for Papers</a>
+      <!-- <a class="block hover:text-slate-400" href="#sponsorship-and-exhibitors">Sponsorship and Exhibitors</a> -->
+      <a class="block hover:text-slate-400" href="#submission-guidelines">Submission Guidelines</a>
+      <div class="relative">
+        <a id="call-for-papers-mobile" class="text-white hover:text-slate-400 cursor-pointer flex items-center"
+          href="#">Call for Papers
+          <i class="fas fa-chevron-down ml-2"></i>
+        </a>
+        <!-- Submenu -->
+        <div id="call-for-papers-submenu-mobile"
+          class="text-white py-2 rounded-md shadow-lg submenu-hidden w-full">
+          <a href="#call-for-papers-tracks"
+            class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference Tracks</a>
+          <a href="#submission-guidelines"
+            class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Paper Preparation and Submission Guidelines for Authors</a>
+          <a href="#important-dates"
+            class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Important Dates</a>
+        </div>
+      </div>
       <a class="block hover:text-slate-400" href="#organizing-committee">Organizing Committee</a>
+      <a class="block hover:text-slate-400" href="#registration">Registration</a>
       <div>
         <a id="past-editions-link-mobile"
-          class="text-white hover:text-slate-400 cursor-pointer flex items-center text-sm" href="#">
+          class="text-white hover:text-slate-400 cursor-pointer flex items-center" href="#">
           Past Editions
           <i class="fas fa-chevron-down ml-2"></i>
         </a>
@@ -173,6 +204,11 @@
         <div class="item">
           <img src="images/delhi-red-fort.jpeg" alt="slider5">
         </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="item">
+          <img src="images/Lotus_Temple.jpg" alt="slider5">
+        </div>
         <!-- Slide 6 -->
         <!-- <div class="item">
             <img src="images/red-fort-famous-fortress-delhi-india.webp" alt="slider6">
@@ -186,12 +222,12 @@
         <h1 class="gradient-text text-4xl md:text-6xl font-bold leading-tight mb-4">
           Welcome to TEMSMET 2025!
         </h1>
-        <p class="text-[32px] text-white suttitle">
-          2025 IEEE 4th International Conference on Technology, Engineering,
+        <p class="text-lg md:text-[32px] text-white suttitle">
+          IEEE 4th International Conference on Technology, Engineering,
           Management for Societal Impact using Marketing, Entrepreneurship,
           and Talent (TEMSMET)
         </p>
-        <p class="text-[32px] text-white suttitle">
+        <p class="mt-8 text-lg md:text-[32px]  text-white suttitle">
           NOV 6-7, 2025<br />
           National Institute of Technology Delhi, New Delhi, India
         </p>
