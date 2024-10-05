@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   menuButton.addEventListener("click", function () {
     mobileMenu.classList.toggle("hidden");
   });
+  
 
   document.addEventListener("click", function (event) {
     // Check if the click target is not the button, the menu, or a child of the button or the menu
@@ -79,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pastEditionsSubmenuMobile.classList.remove("submenu-visible");
       pastEditionsSubmenuMobile.classList.add("submenu-hidden");
     }
+  })
 
   const callForPaper = document.getElementById("call-for-papers");
   const callForPaperSubmenu = document.getElementById("call-for-papers-submenu");
@@ -87,26 +89,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   callForPaper.addEventListener("click", function (event){
     event.preventDefault();
+    console.log("clicked Call for paper");
     callForPaperSubmenu.classList.toggle("submenu-visible");
 
   });
 
-  callForPaperMobile.addEventListener("click", function (event){
-    event.preventDefault();
-    callForPaperSubmenuMobile.classList.toggle("submenu-visible");
-  });
+  // callForPaperMobile.addEventListener("click", function (event){
+  //   event.preventDefault();
+  //   callForPaperSubmenuMobile.classList.toggle("submenu-visible");
+  // });
 
-  document.addEventListener("click", function (e) {
-    if (!callForPaper.contains(e.target) && !callForPaperSubmenu.contains(e.target)) {
-      callForPaperSubmenu.classList.remove("submenu-visible");
-      callForPaperSubmenu.classList.add("submenu-hidden");
-    }
-    if (!callForPaperMobile.contains(e.target) && !callForPaperSubmenuMobile.contains(e.target)) {
-      callForPaperSubmenuMobile.classList.remove("submenu-visible");
-      callForPaperSubmenuMobile.classList.add("submenu-hidden");
-    }
+  // document.addEventListener("click", function (e) {
+  //   if (!callForPaper.contains(e.target) && !callForPaperSubmenu.contains(e.target)) {
+  //     callForPaperSubmenu.classList.remove("submenu-visible");
+  //     callForPaperSubmenu.classList.add("submenu-hidden");
+  //   }
+  //   if (!callForPaperMobile.contains(e.target) && !callForPaperSubmenuMobile.contains(e.target)) {
+  //     callForPaperSubmenuMobile.classList.remove("submenu-visible");
+  //     callForPaperSubmenuMobile.classList.add("submenu-hidden");
+  //   }
 
-  });
+  // });
 
   // document.addEventListener("click", function (e) {
   //   if (
@@ -139,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
       0: {
         items: 1,
       },
-      600: {
+      400: {
         items: 1,
       },
       1000: {
@@ -147,4 +150,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-});
+  })
