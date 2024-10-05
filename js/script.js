@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-  // callForPaperMobile.addEventListener("click", function (event){
-  //   event.preventDefault();
-  //   callForPaperSubmenuMobile.classList.toggle("submenu-visible");
-  // });
+  callForPaperMobile.addEventListener("click", function (event){
+    event.preventDefault();
+    callForPaperSubmenuMobile.classList.toggle("submenu-visible");
+  });
 
   // document.addEventListener("click", function (e) {
   //   if (!callForPaper.contains(e.target) && !callForPaperSubmenu.contains(e.target)) {
