@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pastEditionsSubmenuMobile.classList.toggle("submenu-visible");
   });
 
+
   document.addEventListener("click", function (e) {
     if (
       !pastEditionsLink.contains(e.target) &&
@@ -57,7 +58,25 @@ document.addEventListener("DOMContentLoaded", function () {
       pastEditionsSubmenuMobile.classList.remove("submenu-visible");
       pastEditionsSubmenuMobile.classList.add("submenu-hidden");
     }
+
+  const callForPaper = document.getElementById("call-for-papers");
+  const callForPaperSubmenu = document.getElementById("call-for-papers-submenu");
+  callForPaper.addEventListener("click", function (event){
+    event.preventDefault();
+    callForPaperSubmenu.classList.toggle("submenu-visible");
   });
+
+  // document.addEventListener("click", function (e) {
+  //   if (
+  //     (!pastEditionsLink.contains(e.target) &&
+  //       !pastEditionsSubmenu.contains(e.target)) ||
+  //     (!pastEditionsLinkMobile.contains(e.target) &&
+  //       !pastEditionsSubmenuMobile.contains(e.target))
+  //   ) {
+  //     pastEditionsSubmenu.classList.remove("submenu-visible");
+  //     pastEditionsSubmenu.classList.add("submenu-hidden");
+  //   }
+  // });
 
   const effects = ["slide", "cube", "fade", "coverflow"];
 
