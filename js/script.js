@@ -62,6 +62,24 @@ document.addEventListener("DOMContentLoaded", function () {
     pastEditionsSubmenuMobile.classList.toggle("submenu-visible");
   });
 
+
+  document.addEventListener("click", function (e) {
+    if (
+      !pastEditionsLink.contains(e.target) &&
+      !pastEditionsSubmenu.contains(e.target)
+    ) {
+      pastEditionsSubmenu.classList.remove("submenu-visible");
+      pastEditionsSubmenu.classList.add("submenu-hidden");
+    }
+
+    if (
+      !pastEditionsLinkMobile.contains(e.target) &&
+      !pastEditionsSubmenuMobile.contains(e.target)
+    ) {
+      pastEditionsSubmenuMobile.classList.remove("submenu-visible");
+      pastEditionsSubmenuMobile.classList.add("submenu-hidden");
+    }
+
   const callForPaper = document.getElementById("call-for-papers");
   const callForPaperSubmenu = document.getElementById("call-for-papers-submenu");
   const callForPaperMobile = document.getElementById("call-for-papers-mobile");
@@ -70,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   callForPaper.addEventListener("click", function (event){
     event.preventDefault();
     callForPaperSubmenu.classList.toggle("submenu-visible");
+
   });
 
   callForPaperMobile.addEventListener("click", function (event){
@@ -86,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
       callForPaperSubmenuMobile.classList.remove("submenu-visible");
       callForPaperSubmenuMobile.classList.add("submenu-hidden");
     }
+
   });
 
   // document.addEventListener("click", function (e) {
