@@ -63,6 +63,12 @@ section.home {
     overflow: hidden;
     transition: transform 1s ease-in-out;
     transform: translate3d(0, 0, 0);
+    margin:0;
+    padding:0;
+}
+
+.owl-carousel .owl-item{
+    margin:0px;
 }
 
 .owl-carousel .item img {
@@ -70,6 +76,8 @@ section.home {
     height: 100%;
     object-fit: cover;
     transition: opacity 1s ease-in-out;
+    margin:0;
+    padding:0;
 }
 
 .owl-nav {
