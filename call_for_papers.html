@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEMSMET 2025 Conference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-slate-950 shadow-lg sticky top-0 z-50 p-2">
+        <div class="container mx-auto py-4 flex justify-between items-center">
+            <!-- Logo (optional) -->
+            <div class="text-white font-bold">TEMSMET 2025</div>
+
+            <!-- Hamburger Menu for Mobile View -->
+            <div class="block md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Toggle menu">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+            </div>
+            <!-- Main Menu (hidden on mobile by default) -->
+            <div id="menu" class="hidden md:flex space-x-4 items-center">
+                <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="index.html">Home</a>
+
+                <!-- About Dropdown Menu -->
+                <div class="relative">
+                    <a id="about-link" class="text-white hover:text-slate-400 cursor-pointer flex items-center text-sm" href="#">About <i class="fas fa-chevron-down ml-2"></i></a>
+                    <!-- Submenu -->
+                    <div id="about-submenu" class="absolute left-0 text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]">
+                        <a href="#conference-theme" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+              Theme</a>
+                        <a href="#objectives" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Objectives</a>
+                        <a href="#target-audience" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Target Audience</a>
+                        <!-- <a href="#special-tracks" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Special Tracks</a> -->
+                        <a href="#conference-structure" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+              Structure</a>
+                    </div>
+                </div>
+                <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#contact-us">Contact Us</a>
+                <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#speakers">Potential Speakers</a>
+                <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#venue-and-dates">Venue and Dates</a>
+                <!-- <a class="text-white hover:text-slate-400 cursor-pointer" href="#sponsorship-and-exhibitors">Sponsorship and
+          Exhibitors</a> -->
+                <!--Sponsorship and
+          Exhibitors was Commented for the replacement with Submission Guidelines on oct 3-2024 as discussed by sir by Parvej Khan-->
+                <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#submission-guidelines">Submission
+          Guidelines</a>
+                <div class="relative">
+                    <a id="call-for-papers" class="text-white hover:text-slate-400 cursor-pointer flex items-center text-sm" href="#">Call for Papers
+            <i class="fas fa-chevron-down ml-2"></i>
+          </a>
+                    <!-- Submenu -->
+                    <div id="call-for-papers-submenu" class="absolute left-0 text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]">
+                        <a href="#call-for-papers-tracks" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference Tracks</a>
+                        <a href="#submission-guidelines" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Paper Preparation and Submission Guidelines for Authors</a>
+                        <a href="#important-dates" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Important Dates</a>
+                    </div>
+                </div>
+                <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#registration">Registration</a>
+                <a class="text-white hover:text-slate-400 cursor-pointer text-sm" href="#organizing-committee">Organizing
+          Committee</a>
+
+                <div class="relative">
+                    <a id="past-editions-link" class="text-white hover:text-slate-400 cursor-pointer flex items-center text-sm" href="#">Past
+            Editions
+            <i class="fas fa-chevron-down ml-2"></i>
+          </a>
+                    <!-- Submenu -->
+                    <div id="past-editions-submenu" class="absolute left-0 text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]">
+                        <a href="https://ieeexplore.ieee.org/xpl/conhome/9557352/proceeding" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2020</a>
+                        <a href="https://ieeexplore.ieee.org/xpl/conhome/9768306/proceeding" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2021</a>
+                        <a href="https://ieeexplore.ieee.org/xpl/conhome/10149893/proceeding" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2023</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950 text-white space-y-4 p-4">
+            <a class="block hover:text-slate-400" href="index.html">Home</a>
+            <!-- <a class="block hover:text-slate-400" href="#conference-theme">Conference Theme</a> -->
+            <!-- <a class="block hover:text-slate-400" href="#objectives">Objectives</a> -->
+            <!-- <a class="block hover:text-slate-400" href="#target-audience">Target Audience</a> -->
+            <!-- <a class="block hover:text-slate-400" href="#special-tracks">Special Tracks</a> -->
+            <!-- <a class="block hover:text-slate-400" href="#conference-structure">Conference Structure</a> -->
+            <div class="relative">
+                <a id="about-link-mobile" class="text-white hover:text-slate-400 cursor-pointer flex items-center" href="#">About <i class="fas fa-chevron-down ml-2"></i></a>
+                <!-- Submenu -->
+                <div id="about-submenu-mobile" class="text-white py-2 rounded-md shadow-lg submenu-hidden w-full">
+                    <a href="#conference-theme" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+            Theme</a>
+                    <a href="#objectives" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Objectives</a>
+                    <a href="#target-audience" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Target Audience</a>
+                    <!-- <a href="#special-tracks" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Special Tracks</a> -->
+                    <a href="#conference-structure" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference
+            Structure</a>
+                </div>
+            </div>
+            <a class="block hover:text-slate-400" href="#contact-us">Contact Us</a>
+            <a class="block hover:text-slate-400" href="#speakers">Potential Speakers</a>
+            <a class="block hover:text-slate-400" href="#venue-and-dates">Venue and Dates</a>
+            <!-- <a class="block hover:text-slate-400" href="#sponsorship-and-exhibitors">Sponsorship and Exhibitors</a> -->
+            <a class="block hover:text-slate-400" href="#submission-guidelines">Submission Guidelines</a>
+            <div class="relative">
+                <a id="call-for-papers-mobile" class="text-white hover:text-slate-400 cursor-pointer flex items-center" href="#">Call for Papers
+          <i class="fas fa-chevron-down ml-2"></i>
+        </a>
+                <!-- Submenu -->
+                <div id="call-for-papers-submenu-mobile" class="text-white py-2 rounded-md shadow-lg submenu-hidden w-full">
+                    <a href="#call-for-papers-tracks" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Conference Tracks</a>
+                    <a href="#submission-guidelines" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Paper Preparation and Submission Guidelines for Authors</a>
+                    <a href="#important-dates" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">Important Dates</a>
+                </div>
+            </div>
+            <a class="block hover:text-slate-400" href="#organizing-committee">Organizing Committee</a>
+            <a class="block hover:text-slate-400" href="#registration">Registration</a>
+            <div>
+                <a id="past-editions-link-mobile" class="text-white hover:text-slate-400 cursor-pointer flex items-center" href="#">
+          Past Editions
+          <i class="fas fa-chevron-down ml-2"></i>
+        </a>
+                <div id="past-editions-submenu-mobile" class="text-white py-2 rounded-md shadow-lg submenu-hidden w-[192px]">
+                    <a href="https://ieeexplore.ieee.org/xpl/conhome/9557352/proceeding" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2020</a>
+                    <a href="https://ieeexplore.ieee.org/xpl/conhome/9768306/proceeding" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2021</a>
+                    <a href="https://ieeexplore.ieee.org/xpl/conhome/10149893/proceeding" class="block px-4 py-2 hover:bg-slate-700 whitespace-no-wrap">2023</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home relative flex justify-center items-center px-0">
+        <div class="absolute inset-0 bg-cover bg-center opacity-90" style="background-image: url('.images/Hero-BG-TEMSMET-2025.jpg');"></div>
+        <!-- Swiper Slider for Background Images -->
+        <div class="absolute inset-0 z-0">
+            <div class="owl-carousel">
+                <!-- Slide 1 -->
+                <div class="item mx-0 px-0">
+                    <img class="w-full" src="images/Hero-BG-TEMSMET-2025.jpg" alt="slider1">
+                    <!--<div-->
+                    <!--    class="bg-cover bg-center h-full w-full"-->
+                    <!--    style="-->
+                    <!--      background-image: url('./images/Hero-BG-TEMSMET-2025.jpg');-->
+                    <!--    "-->
+                    <!--  ></div>-->
+                </div>
+                <!-- Slide 2 -->
+                <div class="item mx-0 px-0">
+                    <img class="w-full" src="images/delhi_images_copy.107113609.jpg" alt="slider2">
+                </div>
+                <!-- Slide 3 -->
+                <div class="item mx-0 px-0">
+                    <img class="w-full" src="images/gurgaon-cyber-city-new-delhi-india.webp" alt="slider3">
+                </div>
+                <!-- Slide 4 -->
+                <div class="item mx-0 px-0">
+                    <img class="w-full" src="images/india-gate.jpg" alt="slider4">
+                </div>
+                <!-- Slide 5 -->
+                <div class="item mx-0 px-0">
+                    <img class="w-full" src="images/delhi-red-fort.jpeg" alt="slider5">
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="item mx-0 px-0">
+                    <img class="w-full" src="images/Lotus_Temple.jpg" alt="slider5">
+                </div>
+                <!-- Slide 6 -->
+                <!-- <div class="item">
+            <img src="images/red-fort-famous-fortress-delhi-india.webp" alt="slider6">
+          </div> -->
+            </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="relative z-10 text-center p-6 flex justify-center items-center">
+            <div class="w-[80%]">
+                <h1 class="gradient-text text-4xl md:text-6xl font-bold leading-tight mb-4">
+                    Welcome to TEMSMET 2025!
+                </h1>
+                <p class="text-sm p-5  md:text-[32px] text-white suttitle">
+                    IEEE 4th International Conference <br/> <br/> on <br/> <br/>
+                    <span class="leading-tight">Technology, Engineering, Management for Societal Impact using Marketing, Entrepreneurship,
+          and Talent (TEMSMET)</span>
+                </p>
+                <p class="mt-8 p-5 text-lg md:text-[32px]  text-white suttitle">
+                    05-07 November 2025<br /> National Institute of Technology Delhi, New Delhi, India
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- all the tracks are updated as per the current doc 05/10/2024 -->
+    <section id="call-for-papers-tracks" class="bg-white text-gray-800 p-8 lg:px-2">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold mb-6">Call for Papers</h2>
+
+            <div class="mb-8">
+                <h3 class="text-3l font-semibold mb-4">Track 1 - Innovations in Power Engineering</h3>
+                <ul class="list-disc pl-8 space-y-2">
+                    <li>Sustainable Power Generation, transportation</li>
+                    <li>Power Electronic Converters and Topologies</li>
+                    <li>Digital Twin of Power Electronic Systems</li>
+                    <li>Scalable and Sustainable Renewable and Clean Energy including Green Hydrogen</li>
+                    <li>Electric and Hybrid Electric Vehicles and charging technologies</li>
+                    <li>Artificial Intelligence in Electrical Engineering</li>
+                    <li>Security Aspects of Cyber Physical Energy Systems</li>
+                    <li>IoT for Power Electronics Systems</li>
+                    <li>Smart Grids and the commerce around it</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-3l font-semibold mb-4">Track 2 - Artificial Intelligence, Machine Learning and Cyber Security</h3>
+                <ul class="list-disc pl-8 space-y-2">
+                    <li>Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks</li>
+                    <li>Generative AI</li>
+                    <li>Language Models and Transformers</li>
+                    <li>Image processing, Object Detection and Recognition</li>
+                    <li>Augmented Reality (AR) and Virtual Reality (VR) Applications</li>
+                    <li>Predictive Analytics and Forecasting</li>
+                    <li>Big Data Analytics in niche applications</li>
+                    <li>AI Ethics, Cybersecurity, Data Privacy and Protection</li>
+                    <li>Machine Learning in medical applications</li>
+                    <li>Policies and Governance for AI and Cyber Security era</li>
+                    <li>Risk and Threats of AI adaption</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-3l font-semibold mb-4">Track 3 - Smart Systems and Communications</h3>
+                <ul class="list-disc pl-8 space-y-2">
+                    <li>Edge Computing and Fog Computing</li>
+                    <li>IoT, Sensor Networks and Data Acquisition</li>
+                    <li>Smart Cities and Smart Homes</li>
+                    <li>Cryptography and Encryption Techniques</li>
+                    <li>Blockchain Systems, Security and Privacy</li>
+                    <li>High-Performance Computing (HPC)</li>
+                    <li>Software-Defined Networking (SDN) and Network Function Virtualization (NFV)</li>
+                    <li>Embedded Systems and Real-Time Computing</li>
+                    <li>Wireless, Optical Fibre and Sensor Networks</li>
+                    <li>New era RF & Microwave Communications</li>
+                    <li>5G and 6G Networks</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-3l font-semibold mb-4">Track 4 - Engineering and Smart Management</h3>
+                <ul class="list-disc pl-8 space-y-2">
+                    <li>Software Engineering and Management</li>
+                    <li>Smart Manufacturing and Automation</li>
+                    <li>Predictive Maintenance and AI-Driven Production Systems</li>
+                    <li>Digital Twins and Simulation of Business Models</li>
+                    <li>Organizational Change Management in Digital Transformations</li>
+                    <li>AI-Driven CRM and Personalization</li>
+                    <li>AI-Powered Financial Forecasting and Risk Management</li>
+                    <li>Automation of Decision-Making Processes in Management</li>
+                    <li>Challenges of Digital Currencies, CBDCs and Cryptocurrency Regulation</li>
+                    <li>Cloud-Based Analytics Platforms for Agile Business Decisions</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-3l font-semibold mb-4">Track 5 - Advancements in VLSI, Embedded systems and Signal Processing</h3>
+                <ul class="list-disc pl-8 space-y-2">
+                    <li>Audio & Acoustic Signal Processing</li>
+                    <li>Image, Video & Multidimensional Signal Processing, Computer Vision</li>
+                    <li>Design, construction, control of mobile robots and Outdoor services</li>
+                    <li>Aerial robots (Guidance, Navigation and Control)</li>
+                    <li>Man-machine interfaces applied to single and Multi-robot systems</li>
+                    <li>AI-assisted VLSI Designs and challenges</li>
+                    <li>Neuromorphic and Quantum Computing Trends</li>
+                    <li>Deep Submicron Design and Modeling Issues</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-3l font-semibold mb-4">Track 6 - Innovations and Entrepreneurship</h3>
+                <ul class="list-disc pl-8 space-y-2">
+                    <li>Disruptive product ideas</li>
+                    <li>Inclusive business models</li>
+                    <li>AI-powered sales and marketing strategies</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 TEMSMET. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
